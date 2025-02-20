@@ -1,0 +1,25 @@
+# tools for retreiving weather data from openweathermap.com
+import requests
+
+# source 1: weather api
+APIKEY = "9054f01241fb959b36340b39ec9fe731"
+city = "Carlsbad"
+units = "imperial"
+lat = "33.080699"
+lon = "-117.236401"
+
+def get_current_weather_data_by_city(city, units="imperial"):
+    url_city = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={APIKEY}&units={units}"
+    response = requests.get(url_city)
+    return response.json()
+
+def get_current_weather_data_by_coords(lat, lon, units="imperial"):
+    url_coords = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={APIKEY}&units={units}"
+    response = requests.get(url_coords)
+    return response.json()
+
+SAMPLE_DATA = ["Boston weather: {'coord': {'lon': -71.0598, 'lat': 42.3584}, 'weather': [{'id': 800, 'main': 'Clear', 'description': 'clear sky', 'icon': '01n'}], 'base': 'stations', 'main': {'temp': 43.68, 'feels_like': 42.08, 'temp_min': 35.85, 'temp_max': 46.35, 'pressure': 1015, 'humidity': 70, 'sea_level': 1015, 'grnd_level': 1010}, 'visibility': 10000, 'wind': {'speed': 3.44, 'deg': 10}, 'clouds': {'all': 0}, 'dt': 1728811773, 'sys': {'type': 1, 'id': 3486, 'country': 'US', 'sunrise': 1728816905, 'sunset': 1728857117}, 'timezone': -14400, 'id': 4930956, 'name': 'Boston', 'cod': 200}F", "Suwanee weather: {'coord': {'lon': -84.0713, 'lat': 34.0515}, 'weather': [{'id': 800, 'main': 'Clear', 'description': 'clear sky', 'icon': '01n'}], 'base': 'stations', 'main': {'temp': 53.91, 'feels_like': 53.28, 'temp_min': 51.01, 'temp_max': 55.96, 'pressure': 1018, 'humidity': 91, 'sea_level': 1018, 'grnd_level': 980}, 'visibility': 10000, 'wind': {'speed': 0, 'deg': 0}, 'clouds': {'all': 0}, 'dt': 1728811893, 'sys': {'type': 1, 'id': 4805, 'country': 'US', 'sunrise': 1728819601, 'sunset': 1728860666}, 'timezone': -14400, 'id': 4225309, 'name': 'Suwanee', 'cod': 200}F", "Boulder weather: {'coord': {'lon': -105.3505, 'lat': 40.0833}, 'weather': [{'id': 800, 'main': 'Clear', 'description': 'clear sky', 'icon': '01n'}], 'base': 'stations', 'main': {'temp': 44.47, 'feels_like': 42.48, 'temp_min': 39.69, 'temp_max': 49.3, 'pressure': 1021, 'humidity': 53, 'sea_level': 1021, 'grnd_level': 785}, 'visibility': 10000, 'wind': {'speed': 4, 'deg': 292, 'gust': 8.99}, 'clouds': {'all': 0}, 'dt': 1728811650, 'sys': {'type': 2, 'id': 2081400, 'country': 'US', 'sunrise': 1728825013, 'sunset': 1728865466}, 'timezone': -21600, 'id': 5574999, 'name': 'Boulder', 'cod': 200}F", "San Diego weather: {'coord': {'lon': -117.1573, 'lat': 32.7153}, 'weather': [{'id': 804, 'main': 'Clouds', 'description': 'overcast clouds', 'icon': '04n'}], 'base': 'stations', 'main': {'temp': 61.32, 'feels_like': 61.38, 'temp_min': 58.84, 'temp_max': 63.09, 'pressure': 1016, 'humidity': 90, 'sea_level': 1016, 'grnd_level': 1011}, 'visibility': 10000, 'wind': {'speed': 3, 'deg': 300, 'gust': 5.01}, 'clouds': {'all': 100}, 'dt': 1728811526, 'sys': {'type': 2, 'id': 2095167, 'country': 'US', 'sunrise': 1728827484, 'sunset': 1728868661}, 'timezone': -25200, 'id': 5391811, 'name': 'San Diego', 'cod': 200}F", "San Francisco weather: {'coord': {'lon': -122.4194, 'lat': 37.7749}, 'weather': [{'id': 804, 'main': 'Clouds', 'description': 'overcast clouds', 'icon': '04n'}], 'base': 'stations', 'main': {'temp': 63.91, 'feels_like': 64.27, 'temp_min': 62.01, 'temp_max': 66.52, 'pressure': 1018, 'humidity': 91, 'sea_level': 1018, 'grnd_level': 1014}, 'visibility': 10000, 'wind': {'speed': 4.61, 'deg': 320}, 'clouds': {'all': 100}, 'dt': 1728811145, 'sys': {'type': 2, 'id': 2017837, 'country': 'US', 'sunrise': 1728828991, 'sunset': 1728869680}, 'timezone': -25200, 'id': 5391959, 'name': 'San Francisco', 'cod': 200}F", "New York weather: {'coord': {'lon': -74.006, 'lat': 40.7143}, 'weather': [{'id': 804, 'main': 'Clouds', 'description': 'overcast clouds', 'icon': '04n'}], 'base': 'stations', 'main': {'temp': 58.6, 'feels_like': 56.57, 'temp_min': 53.55, 'temp_max': 60.22, 'pressure': 1014, 'humidity': 51, 'sea_level': 1014, 'grnd_level': 1012}, 'visibility': 10000, 'wind': {'speed': 8.05, 'deg': 100}, 'clouds': {'all': 100}, 'dt': 1728811774, 'sys': {'type': 2, 'id': 2037026, 'country': 'US', 'sunrise': 1728817520, 'sunset': 1728857916}, 'timezone': -14400, 'id': 5128581, 'name': 'New York', 'cod': 200}F", "Los Angeles weather: {'coord': {'lon': -118.2437, 'lat': 34.0522}, 'weather': [{'id': 803, 'main': 'Clouds', 'description': 'broken clouds', 'icon': '04n'}], 'base': 'stations', 'main': {'temp': 62.2, 'feels_like': 62.31, 'temp_min': 59.09, 'temp_max': 64.31, 'pressure': 1015, 'humidity': 89, 'sea_level': 1015, 'grnd_level': 996}, 'visibility': 10000, 'wind': {'speed': 3.44, 'deg': 0}, 'clouds': {'all': 75}, 'dt': 1728811527, 'sys': {'type': 2, 'id': 2034962, 'country': 'US', 'sunrise': 1728827806, 'sunset': 1728868860}, 'timezone': -25200, 'id': 5368361, 'name': 'Los Angeles', 'cod': 200}F"]
+
+if __name__ == "__main__":
+    city_data = get_current_weather_data_by_city(city)
+    coords_data = get_current_weather_data_by_coords(lat, lon)
