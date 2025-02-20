@@ -130,8 +130,7 @@ export const PlayerTable2 = () => {
     // debugHeaders: true,
     // debugColumns: false,
   });
-  // console.log(table.getRowModel().rows); // []
-  console.log(table.getState().columnFilters);
+
   return (
     <div
       className="w-full h-full text-center min-w-0"
