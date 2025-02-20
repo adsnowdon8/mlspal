@@ -3,7 +3,7 @@ import NavBar from "./navBar";
 import { InputView } from "./trade/Input";
 import { LandingPage } from "./LandingPage";
 import TeamTable from "./teamTable/teamTable";
-import { PlayerTable2 } from "./playerTable/playerTable2";
+import { PlayerTable2 } from "./playerTable/PlayerTable2";
 
 const App = () => {
   return (
