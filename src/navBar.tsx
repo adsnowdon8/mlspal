@@ -21,7 +21,7 @@ const NavBar = () => {
     <nav>
       <div className="flex gap-3 p-5 items-center bg-gray-100">
         <NavLink className="pr-8" to="/">
-          <h1 className="font-bold  text-xl"> MLS pal</h1>
+          <h1 className="font-bold  text-xl"> MLS-pal</h1>
         </NavLink>
         <NavLink to="/players">Player Table</NavLink>
         <NavLink to="/teams">Team Table</NavLink>
