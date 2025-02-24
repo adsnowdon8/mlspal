@@ -2,9 +2,12 @@ import json
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import google.generativeai as genai
+from .model.Model import Model
+from .model.vectordb import SimpleVectorDatabase
+from .model.textEmbeddingUtils import embed_many_texts
+from .model.weatherDataUtils import SAMPLE_DATA
 
 import google.generativeai as genai
-import os
 
 
 # google api setup
@@ -90,15 +93,6 @@ def local_response():
         except (json.JSONDecodeError, KeyError) as e:
             return jsonify({"error": str(e)}), 400  # Return an error message in JSON format
         
-
-def handle_query():
-    question = request.json['question']
-    context_chunks = pinecone_service.get_most_similar_chunks_for_query(question, PINECONE_INDEX_NAME)
-    prompt = build_prompt(question, context_chunks)
-    print("\n==== PROMPT ====\n")
-    print(prompt)
-    answer = openai_service.get_llm_answer(prompt)
-    return jsonify({ "question": question, "answer": answer })  
 
 if __name__ == "__main__":
     api.run(debug=True, port=5000)  # Use debug=True for better error messages during development
