@@ -113,7 +113,14 @@ function TeamTable() {
       }}
     >
       <table className="w-full">
-        <thead style={{ position: "sticky", top: "0", zIndex: 1 }}>
+        <thead
+          style={{
+            position: "sticky",
+            top: "0",
+            zIndex: 1,
+            background: "white",
+          }}
+        >
           {table.getHeaderGroups().map((headerGroup) => (
             <tr
               key={headerGroup.id}

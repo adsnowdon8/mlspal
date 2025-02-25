@@ -9,14 +9,23 @@ export const ResponseComponent: React.FC<{
   response = testResponse;
   const formattedResponse = useMemo(() => {
     const strReplace = response.replace(/(?<!\*)(\*\s)+/g, "-");
+    // const addBullets = reactStringReplace(
+    //   response,
+    //   /(?<!\*)(\*\s)+/g,
+    //   (match, i) => <br />
+    // );
     // return strReplace;
     const replacedText = reactStringReplace(
       strReplace,
       /\*\*(.*?)\*\*/g,
-      (match, i) => <strong className="font-bold">{match}</strong>
+      (match, i) => (
+        <>
+          <strong className="font-bold">{match}</strong>
+        </>
+      )
     );
-
     return replacedText;
+    // return <div className="break-normal">{replacedText}</div>;
   }, [response]);
 
   // const formattedResponse2 = useMemo(() => {
@@ -41,14 +50,16 @@ export const ResponseComponent: React.FC<{
   //   return moreFormatted;
   // }, [response]);
   return (
-    <div className="overflow-auto flex flex-col justify-center gap-2 pb-40">
+    <div className="w-full flex flex-col text-wrap justify-center gap-2 pb-40">
       {/* {reactStringReplace(response, /(\d+)/g, (match, i) => (
         <span key={i} style={{ color: "red" }}>
           {match}
         </span>
       ))} */}
       {/* {formattedResponse2} */}
-      <pre className="p-5 text-sm">{formattedResponse}</pre>
+      <pre className="p-5 text-sm whitespace-pre-wrap overflow-y-scroll">
+        {formattedResponse}
+      </pre>
       {/* <pre>{response}</pre> */}
       {/* {response}
       {response}
