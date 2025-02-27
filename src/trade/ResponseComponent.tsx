@@ -1,20 +1,13 @@
 import { useMemo } from "react";
 import reactStringReplace from "react-string-replace";
-import { testResponse } from "../constants";
 
 export const ResponseComponent: React.FC<{
   response: string;
   setResponse: (response: string) => void;
 }> = ({ response, setResponse }) => {
-  response = testResponse;
+  // response = testResponse;
   const formattedResponse = useMemo(() => {
     const strReplace = response.replace(/(?<!\*)(\*\s)+/g, "-");
-    // const addBullets = reactStringReplace(
-    //   response,
-    //   /(?<!\*)(\*\s)+/g,
-    //   (match, i) => <br />
-    // );
-    // return strReplace;
     const replacedText = reactStringReplace(
       strReplace,
       /\*\*(.*?)\*\*/g,
