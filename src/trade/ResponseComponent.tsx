@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import reactStringReplace from "react-string-replace";
+import { testResponse } from "../constants";
 
 export const ResponseComponent: React.FC<{
   response: string;
@@ -20,6 +21,7 @@ export const ResponseComponent: React.FC<{
     return replacedText;
     // return <div className="break-normal">{replacedText}</div>;
   }, [response]);
+  console.log({ formattedResponse });
 
   // const formattedResponse2 = useMemo(() => {
   //   // response = response.replace(/\*([^\*]*)\*/g, "<em>$1</em>");
@@ -43,14 +45,14 @@ export const ResponseComponent: React.FC<{
   //   return moreFormatted;
   // }, [response]);
   return (
-    <div className="w-full flex flex-col text-wrap justify-center gap-2 pb-40">
+    <div className="w-full h-full flex flex-col text-wrap justify-center gap-2 pb-8 relative overflow-auto">
       {/* {reactStringReplace(response, /(\d+)/g, (match, i) => (
         <span key={i} style={{ color: "red" }}>
           {match}
         </span>
       ))} */}
       {/* {formattedResponse2} */}
-      <pre className="p-5 text-sm whitespace-pre-wrap overflow-y-scroll">
+      <pre className="p-5 h-full text-sm whitespace-pre-wrap overflow-y-scroll">
         {formattedResponse}
       </pre>
       {/* <pre>{response}</pre> */}

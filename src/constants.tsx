@@ -5,6 +5,7 @@ export const server_GEMINI_ENDPOINT =
 export const LOCAL_ENDPOINT = "http://127.0.0.1:5000/local";
 
 export const document_prefix_prompt =
+  // "You are a worker for our app, MLS-Pal. You are given a questions from a user, and your job is to respond to the user with the best answer possible." +
   "The following DOCUMENTS provide factual context for you to build your answers around to respond to the USER:\n";
 
 export const MLS_TRADE_RULES =

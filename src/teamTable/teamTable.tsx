@@ -12,7 +12,7 @@ import { Team, teamsJson } from "../Teams";
 const columnHelper = createColumnHelper<Team>();
 const columns = [
   columnHelper.accessor("teamName", {
-    header: () => "Team Name",
+    header: () => "Team",
     cell: (info) => info.getValue(),
     footer: (info) => info.column.id,
     sortingFn: "alphanumeric",
@@ -23,21 +23,21 @@ const columns = [
     footer: (info) => info.column.id,
     sortingFn: "alphanumeric",
   }),
-  columnHelper.accessor((row) => row.rosterSlotsFilled, {
-    id: "Roster Slots Filled",
-    cell: (info) => info.getValue(),
-    header: () => <span>Position</span>,
-    footer: (info) => info.column.id,
-    sortingFn: "alphanumeric",
-  }),
+  // columnHelper.accessor((row) => row.rosterSlotsFilled, {
+  //   id: "Roster Slots Filled",
+  //   cell: (info) => info.getValue(),
+  //   header: () => <span>Position</span>,
+  //   footer: (info) => info.column.id,
+  //   sortingFn: "alphanumeric",
+  // }),
   columnHelper.accessor("position2024", {
     header: () => "2024 Position",
     cell: (info) => info.renderValue(),
     footer: (info) => info.column.id,
     sortingFn: "alphanumeric",
   }),
-  columnHelper.accessor("madePlayoffs", {
-    header: () => <span>Made Playoffs</span>,
+  columnHelper.accessor("made2024Playoffs", {
+    header: () => <span>Made 2024 Playoffs</span>,
     footer: (info) => info.column.id,
     sortingFn: "alphanumeric",
   }),
@@ -51,11 +51,11 @@ const columns = [
     footer: (info) => info.column.id,
     sortingFn: "alphanumeric",
   }),
-  columnHelper.accessor("foundingYear", {
-    header: "Founding Year",
-    footer: (info) => info.column.id,
-    sortingFn: "alphanumeric",
-  }),
+  // columnHelper.accessor("foundingYear", {
+  //   header: "Founding Year",
+  //   footer: (info) => info.column.id,
+  //   sortingFn: "alphanumeric",
+  // }),
   columnHelper.accessor("location", {
     header: "Location",
     footer: (info) => info.column.id,

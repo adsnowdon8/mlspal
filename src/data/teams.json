@@ -1,0 +1,272 @@
+[
+  {
+    "teamName": "Atlanta United",
+    "coach": "Ronny Delia",
+    "owner": "Arthur M. Blank",
+    "gm": "Chris Henderson",
+    "location": "Atlanta, GA",
+    "position2024": "9th in East",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "Charlotte",
+    "coach": "Dean Smith",
+    "owner": "David A. Tepper",
+    "gm": "Zoran Krneta",
+    "location": "Charlotte, NC",
+    "position2024": "5th in East",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "Chicago",
+    "coach": "Greg Berhalter",
+    "owner": "Jon Mansueto",
+    "gm": "Greg Berhalter",
+    "location": "Chicago, IL",
+    "position2024": "15th in East",
+    "made2024Playoffs": "No"
+  },
+  {
+    "teamName": "Cincinatti",
+    "coach": "Pat Noonan",
+    "owner": "Carl H. Lindner III",
+    "gm": "Chris Albright",
+    "location": "Cincinnati, OH",
+    "position2024": "3rd in East",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "Columbus",
+    "coach": "Wilfred Nancy",
+    "owner": "Haslam Sports Group",
+    "gm": "Tim Bezbatchenko",
+    "location": "Columbus, OH",
+    "position2024": "2nd in East",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "DC United",
+    "coach": "Troy Lesesne",
+    "owner": "DC United Holdings",
+    "gm": "Ally Mackay ",
+    "location": "Washington, DC",
+    "position2024": "10th in East",
+    "made2024Playoffs": "No"
+  },
+  {
+    "teamName": "Inter Miami",
+    "coach": "Javier Mascherano",
+    "owner": "Jorge Mas",
+    "gm": "Raul Sanllehi",
+    "location": "Fort Lauderdale, FL",
+    "position2024": "1st in East",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "Montreal",
+    "coach": "Laurent Courtois",
+    "owner": "Joey Saputo ",
+    "gm": "Luca Saputo",
+    "location": "Montreal, Canada",
+    "position2024": "8th in East",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "Nashville",
+    "coach": "BJ Callaghan",
+    "owner": "John Ingram",
+    "gm": "Mike Jacob's",
+    "location": "Nashville, TN",
+    "position2024": "13th in East",
+    "made2024Playoffs": "No"
+  },
+  {
+    "teamName": "New England",
+    "coach": "Caleb Porter",
+    "owner": "Kraft Group",
+    "gm": "Curt Onalfo",
+    "location": "Foxborough, MA",
+    "position2024": "14th in East",
+    "made2024Playoffs": "No"
+  },
+  {
+    "teamName": "New York location FC",
+    "coach": "Pascal Jansen",
+    "owner": "location Football Group",
+    "gm": "Brad Sims",
+    "location": "New York location, NY",
+    "position2024": "6th in East",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "NY Red Bulls",
+    "coach": "Sandro Schwarz",
+    "owner": "Red Bull gmbH",
+    "gm": "Julian De Guzman",
+    "location": "Harrison, NJ",
+    "position2024": "7th in East",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "Orlando location",
+    "coach": "Oscar Pareja",
+    "owner": "The Wild Family",
+    "gm": "Luiz Muzzi",
+    "location": "Orlando, FL",
+    "position2024": "4th in East",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "Philadelphia Union",
+    "coach": "Bradley Carnell",
+    "owner": "Jay Sugarman",
+    "gm": "Ernst Tanner",
+    "location": "Chester, PA",
+    "position2024": "12th in East",
+    "made2024Playoffs": "No"
+  },
+  {
+    "teamName": "Toronto",
+    "coach": "Robin Fraser",
+    "owner": "Maple Lead Sports & Entertainment ",
+    "gm": "Jason Hernandez",
+    "location": "Toronto, Canada ",
+    "position2024": "11th in East",
+    "made2024Playoffs": "No"
+  },
+  {
+    "teamName": "Austin",
+    "coach": "Nico Estevez",
+    "owner": "Anthony Precourt",
+    "gm": "Rodolfo Borrell",
+    "location": "Austin, TX",
+    "position2024": "10th in West",
+    "made2024Playoffs": "No"
+  },
+  {
+    "teamName": "Colorado",
+    "coach": "Chris Armas",
+    "owner": "Kroenke Sports & Entertainment",
+    "gm": "Padraig Smith",
+    "location": "Commerce location, CO",
+    "position2024": "7th in West",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "FC Dallas",
+    "coach": "Eric Quill",
+    "owner": "The Hunt Family",
+    "gm": "Andre Zanotta",
+    "location": "Frisco, TX",
+    "position2024": "11th in West",
+    "made2024Playoffs": "No"
+  },
+  {
+    "teamName": "Houston Dynamo",
+    "coach": "Ben Olsen",
+    "owner": "Ted Segal",
+    "gm": "Pat Onstad",
+    "location": "Houston, TX",
+    "position2024": "5th in West",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "LA Galaxy",
+    "coach": "Greg Vanney",
+    "owner": "Anschutz Entertainment Group",
+    "gm": "Will Kuntz",
+    "location": "Carson, CA",
+    "position2024": "2nd in West",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "LAFC",
+    "coach": "Steve Cherundolo",
+    "owner": "Bennett Rosenthal",
+    "gm": "John Thorrington ",
+    "location": "Los Angeles, CA",
+    "position2024": "1st in West",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "Minnesota",
+    "coach": "Eric Ramsay",
+    "owner": "Dr Bill McGuire",
+    "gm": "Khaled El-Ahmad",
+    "location": "Saint Paul, MN",
+    "position2024": "6th in West",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "Portland",
+    "coach": "Phil Neville",
+    "owner": "Merritt Paulson",
+    "gm": "Ned Grabavoy",
+    "location": "Portland, OR",
+    "position2024": "9th in West",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "Real Salt Lake",
+    "coach": "Pablo Mastroeni",
+    "owner": "David Blitzer",
+    "gm": "Kurt Schmid",
+    "location": "Salt Lake location, UT",
+    "position2024": "3rd in West",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "San Jose",
+    "coach": "Bruce Arena",
+    "owner": "John Fisher",
+    "gm": "Bruce Arena",
+    "location": "San Jose, CA",
+    "position2024": "14th in West",
+    "made2024Playoffs": "No"
+  },
+  {
+    "teamName": "San Diego FC",
+    "coach": "Mikey Varas",
+    "owner": "Mohamed Mansour",
+    "gm": "Tyler Heaps",
+    "location": "San Diego, CA",
+    "position2024": "N/A",
+    "made2024Playoffs": "N/A"
+  },
+  {
+    "teamName": "Seattle Sounders",
+    "coach": "Brian Schmetzer",
+    "owner": "Adrian Hanauer",
+    "gm": "Craig Waibel",
+    "location": "Seattle, WA",
+    "position2024": "4th in West",
+    "made2024Playoffs": "Yes"
+  },
+  {
+    "teamName": "Sporting KC",
+    "coach": "Pete Vermes",
+    "owner": "Sporting Club",
+    "gm": "Mike Burns",
+    "location": "Kansas location, KS",
+    "position2024": "13th in West",
+    "made2024Playoffs": "No"
+  },
+  {
+    "teamName": "St. Louis",
+    "coach": "Olof Mellberg",
+    "owner": "Carolyn Kindle",
+    "gm": "Lutz Pfannenstiel",
+    "location": "St. Louis, MO",
+    "position2024": "12th in West",
+    "made2024Playoffs": "No"
+  },
+  {
+    "teamName": "Vancouver",
+    "coach": "Jesper Sorensen",
+    "owner": "Greg Kerfoot",
+    "gm": "Axel Schuster",
+    "location": "Vancouver, Canada",
+    "position2024": "8th in West",
+    "made2024Playoffs": "Yes"
+  }
+]

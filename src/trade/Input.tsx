@@ -24,24 +24,33 @@ export const InputView: React.FC<{
 
   const createPost = useCallback(
     (endpoint: string) => {
-      console.log(endpoint);
       const constructedQuestion = selectedPlayer + " to " + selectedTeam;
       // ". what does the provided information tell us about this?";
-      console.log({ creating: constructedQuestion });
       if (!constructedQuestion) return;
-
+      console.log("Making post");
       setLoading(true);
       setQuestionsAsked((q) => [...q, question]);
       const playerInfo = playersJson.find(
         (player) => player.firstName + " " + player.lastName === selectedPlayer
       );
-      const playerCurrentClubInfo = teamsJson.find(
-        (team) => team.teamName === playerInfo?.club
-      );
+
+      const playerCurrentClubInfo = teamsJson.find((team) => {
+        return team.teamName === playerInfo?.club;
+      });
       const proposedTeamInfo = teamsJson.find(
         (team) => team.teamName === selectedTeam
       );
-      console.log("playerInfo", playerInfo, playerCurrentClubInfo);
+      console.log(
+        "Player Datas",
+        playerInfo,
+        playerCurrentClubInfo,
+        proposedTeamInfo
+      );
+
+      if (!playerInfo || !playerCurrentClubInfo || !proposedTeamInfo) {
+        setLoading(false);
+        return;
+      }
       const context: string =
         document_prefix_prompt +
         'player information: "' +
@@ -50,7 +59,6 @@ export const InputView: React.FC<{
         JSON.stringify(playerCurrentClubInfo) +
         '" proposed team information: "' +
         proposedTeamInfo +
-        '" ' +
         // JSON.stringify({
         //   Player: "Grayson Doody",
         //   Position: "Right Back",
@@ -67,12 +75,17 @@ export const InputView: React.FC<{
       const sendString =
         context + " USER's proposed trade: " + constructedQuestion + "\n\n";
 
+      // Give the answer as though you are a trade machine
+      // Start your response with "MLS-pal thinks that and end your response with a disclaimer.
       setQuestion("");
 
       console.log({
         "Sending axios post request": {
           question: sendString,
           username: USERNAME,
+          playerInfo: JSON.stringify(playerInfo),
+          playerCurrentClubInfo: JSON.stringify(playerCurrentClubInfo),
+          proposedTeamInfo: JSON.stringify(proposedTeamInfo),
         },
       });
 
@@ -82,6 +95,9 @@ export const InputView: React.FC<{
         data: {
           question: sendString,
           username: USERNAME,
+          playerInfo,
+          playerCurrentClubInfo,
+          proposedTeamInfo,
         },
       })
         .then((response) => {
@@ -104,7 +120,7 @@ export const InputView: React.FC<{
   );
   if (loading) {
     return (
-      <div className="h-full flex items-center justify-center gap-2">
+      <div className="h-full flex items-center justify-center gap-2 overflow-auto relative">
         <div role="status">
           <svg
             aria-hidden="true"
