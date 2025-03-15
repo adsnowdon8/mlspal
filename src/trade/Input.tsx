@@ -35,10 +35,10 @@ export const InputView: React.FC<{
       );
 
       const playerCurrentClubInfo = teamsJson.find((team) => {
-        return team.teamName === playerInfo?.club;
+        return team.Team === playerInfo?.club;
       });
       const proposedTeamInfo = teamsJson.find(
-        (team) => team.teamName === selectedTeam
+        (team) => team.Team === selectedTeam
       );
       console.log(
         "Player Datas",
@@ -69,16 +69,17 @@ export const InputView: React.FC<{
         //   Contract_End: "",
         //   Club: "CF Montreal",
         // }) +
-        MLS_TRADE_RULES;
+        MLS_TRADE_RULES +
+        ". ";
       // JSON.stringify(teaminfo);
 
       const sendString =
-        context + " USER's proposed trade: " + constructedQuestion + "\n\n";
+        context + " Proposed trade: " + constructedQuestion + "\n\n";
 
       // Give the answer as though you are a trade machine
       // Start your response with "MLS-pal thinks that and end your response with a disclaimer.
       setQuestion("");
-
+      console.log(sendString);
       console.log({
         "Sending axios post request": {
           question: sendString,
@@ -124,7 +125,7 @@ export const InputView: React.FC<{
         <div role="status">
           <svg
             aria-hidden="true"
-            className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+            className="w-6 h-6 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
             viewBox="0 0 100 101"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -178,9 +179,9 @@ export const InputView: React.FC<{
             >
               <option value={undefined}> </option>
               {teamsJson
-                .sort((a, b) => a.teamName.localeCompare(b.teamName))
+                .sort((a, b) => a.Team.localeCompare(b.Team))
                 .map((team) => (
-                  <option value={team.teamName}>{team.teamName}</option>
+                  <option value={team.Team}>{team.Team}</option>
                 ))}
             </select>
           </div>

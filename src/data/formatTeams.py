@@ -17,7 +17,7 @@ def calculate_age(birthdate_str):
 
 output = []
 
-with open('mlsTeams.csv','r') as file:
+with open('mlsTeams1.csv','r') as file:
 
     csv_reader = csv.reader(file)
     # next(csv_reader)

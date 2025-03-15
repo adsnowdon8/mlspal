@@ -27,8 +27,6 @@ declare module "@tanstack/react-table" {
 }
 
 export const PlayerTable2 = () => {
-  const rerender = React.useReducer(() => ({}), {})[1];
-
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []
   );
@@ -285,10 +283,10 @@ function Filter({ column }: { column: Column<any, unknown> }) {
     >
       <option value={""}> All Teams</option>
       {teamsJson
-        .sort((a, b) => a.teamName.localeCompare(b.teamName))
+        .sort((a, b) => a.Team.localeCompare(b.Team))
         .map((team) => (
-          <option value={team.teamName} className="">
-            {team.teamName}
+          <option value={team.Team} className="">
+            {team.Team}
           </option>
         ))}
       {/* See faceted column filters example for dynamic select options */}

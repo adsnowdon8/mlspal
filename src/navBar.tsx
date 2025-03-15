@@ -28,7 +28,6 @@ const NavBar = () => {
           <NavLink to="/teams">Team Table</NavLink>
           <NavLink to="/trade">Trade</NavLink>
         </div>
-
         <div className="text-xs">
           4️⃣7️⃣ days until the transfer window closes
         </div>

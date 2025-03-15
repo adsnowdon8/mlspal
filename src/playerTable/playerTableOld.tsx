@@ -156,10 +156,10 @@ function PlayerTable() {
         >
           <option value={ALL_TEAMS}> All Teams</option>
           {teamsJson
-            .sort((a, b) => a.teamName.localeCompare(b.teamName))
+            .sort((a, b) => a.Team.localeCompare(b.Team))
             .map((team) => (
-              <option value={team.teamName} className="">
-                {team.teamName}
+              <option value={team.Team} className="">
+                {team.Team}
               </option>
             ))}
         </select>

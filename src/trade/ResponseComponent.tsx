@@ -21,7 +21,6 @@ export const ResponseComponent: React.FC<{
     return replacedText;
     // return <div className="break-normal">{replacedText}</div>;
   }, [response]);
-  console.log({ formattedResponse });
 
   // const formattedResponse2 = useMemo(() => {
   //   // response = response.replace(/\*([^\*]*)\*/g, "<em>$1</em>");

@@ -11,13 +11,13 @@ import { Team, teamsJson } from "../Teams";
 
 const columnHelper = createColumnHelper<Team>();
 const columns = [
-  columnHelper.accessor("teamName", {
+  columnHelper.accessor("Team", {
     header: () => "Team",
     cell: (info) => info.getValue(),
     footer: (info) => info.column.id,
     sortingFn: "alphanumeric",
   }),
-  columnHelper.accessor("coach", {
+  columnHelper.accessor("Coach", {
     header: () => "Coach",
     cell: (info) => info.getValue(),
     footer: (info) => info.column.id,
@@ -30,24 +30,24 @@ const columns = [
   //   footer: (info) => info.column.id,
   //   sortingFn: "alphanumeric",
   // }),
-  columnHelper.accessor("position2024", {
-    header: () => "2024 Position",
+  columnHelper.accessor("Owner", {
+    header: () => "Owner",
     cell: (info) => info.renderValue(),
     footer: (info) => info.column.id,
     sortingFn: "alphanumeric",
   }),
-  columnHelper.accessor("made2024Playoffs", {
-    header: () => <span>Made 2024 Playoffs</span>,
+  columnHelper.accessor("GM", {
+    header: () => <span>GM</span>,
     footer: (info) => info.column.id,
     sortingFn: "alphanumeric",
   }),
-  columnHelper.accessor("owner", {
+  columnHelper.accessor("City", {
     header: "Owner",
     footer: (info) => info.column.id,
     sortingFn: "alphanumeric",
   }),
-  columnHelper.accessor("gm", {
-    header: "GM",
+  columnHelper.accessor("Position_End_Last_Season", {
+    header: "2024 Position",
     footer: (info) => info.column.id,
     sortingFn: "alphanumeric",
   }),
@@ -56,8 +56,8 @@ const columns = [
   //   footer: (info) => info.column.id,
   //   sortingFn: "alphanumeric",
   // }),
-  columnHelper.accessor("location", {
-    header: "Location",
+  columnHelper.accessor("MLS_Playoffs", {
+    header: "Made 2024 Playoffs",
     footer: (info) => info.column.id,
     sortingFn: "alphanumeric",
   }),
