@@ -4,6 +4,7 @@ import { InputView } from "./trade/Input";
 import { LandingPage } from "./LandingPage";
 import TeamTable from "./teamTable/teamTable";
 import { PlayerTable2 } from "./playerTable/PlayerTable2";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/teams" element={<TeamTable />} />
         <Route path="/trade" element={<InputView />} />
       </Routes>
+      <Analytics />
     </>
   );
 };
