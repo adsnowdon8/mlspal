@@ -34,29 +34,42 @@ export const PlayerTable2 = () => {
   const columns = React.useMemo<ColumnDef<Player, any>[]>(
     () => [
       {
-        accessorKey: "firstName",
+        accessorKey: "First_Name",
         header: "First Name",
         cell: (info) => info.getValue(),
         // enableColumnFilter: false ,
       },
       {
         // accessorFn: (row) => row.lastName,
-        accessorKey: "lastName",
+        accessorKey: "Last_Name",
         id: "lastName",
         cell: (info) => info.getValue(),
         header: () => <span>Last Name</span>,
         // enableColumnFilter: false,
       },
       {
-        accessorKey: "position",
+        accessorKey: "Position",
         header: () => "Position",
         meta: {
           filterVariant: "position",
         },
       },
       {
-        accessorKey: "age",
+        accessorKey: "TEAM",
+        header: "Club",
+        // enableColumnFilter: ,
+        meta: {
+          filterVariant: "club",
+        },
+      },
+      {
+        accessorKey: "Age",
         header: () => "Age",
+        enableColumnFilter: false,
+      },
+      {
+        accessorKey: "Contract_End",
+        header: () => "Contract End",
         enableColumnFilter: false,
 
         // meta: {
@@ -64,24 +77,34 @@ export const PlayerTable2 = () => {
         // },
       },
       {
-        accessorKey: "baseSalary",
-        header: "Base Salary",
+        accessorKey: "Option_Years",
+        header: () => "Option Years",
+        enableColumnFilter: false,
+
+        // meta: {
+        //   filterVariant: "range",
+        // },
+      },
+
+      {
+        accessorKey: "Roster_Designation",
+        header: "Roster Designation",
         enableColumnFilter: false,
         // meta: {
         //   filterVariant: "select",
         // },
       },
       {
-        accessorKey: "guaranteedCompensation",
-        header: "Guaranteed Compensation",
+        accessorKey: "Nationality",
+        header: "Nationality",
         enableColumnFilter: false,
         // meta: {
         //   filterVariant: "range",
         // },
       },
       {
-        accessorKey: "nationality",
-        header: "Nationality",
+        accessorKey: "Domestic_or_International",
+        header: "Domestic or International",
         enableColumnFilter: false,
 
         meta: {
@@ -89,20 +112,12 @@ export const PlayerTable2 = () => {
         },
       },
       {
-        accessorKey: "contractEnd",
-        header: "Contract End",
+        accessorKey: "Minutes_Played",
+        header: "Minutes Played",
         enableColumnFilter: false,
         // meta: {
         //   filterVariant: "range",
         // },
-      },
-      {
-        accessorKey: "club",
-        header: "Club",
-        // enableColumnFilter: ,
-        meta: {
-          filterVariant: "club",
-        },
       },
     ],
     []

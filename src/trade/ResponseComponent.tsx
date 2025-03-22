@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import reactStringReplace from "react-string-replace";
-import { testResponse } from "../constants";
 
 export const ResponseComponent: React.FC<{
   response: string;
@@ -14,7 +13,9 @@ export const ResponseComponent: React.FC<{
       /\*\*(.*?)\*\*/g,
       (match, i) => (
         <>
-          <strong className="font-bold">{match}</strong>
+          <strong className="font-bold" key={i}>
+            {match}
+          </strong>
         </>
       )
     );

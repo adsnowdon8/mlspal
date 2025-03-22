@@ -27,25 +27,25 @@ export const InputView: React.FC<{
       const constructedQuestion = selectedPlayer + " to " + selectedTeam;
       // ". what does the provided information tell us about this?";
       if (!constructedQuestion) return;
-      console.log("Making post");
       setLoading(true);
       setQuestionsAsked((q) => [...q, question]);
       const playerInfo = playersJson.find(
-        (player) => player.firstName + " " + player.lastName === selectedPlayer
+        (player) =>
+          player.First_Name + " " + player.Last_Name === selectedPlayer
       );
 
       const playerCurrentClubInfo = teamsJson.find((team) => {
-        return team.Team === playerInfo?.club;
+        return team.Team === playerInfo?.TEAM;
       });
       const proposedTeamInfo = teamsJson.find(
         (team) => team.Team === selectedTeam
       );
-      console.log(
-        "Player Datas",
-        playerInfo,
-        playerCurrentClubInfo,
-        proposedTeamInfo
-      );
+      // console.log(
+      //   "Player Datas",
+      //   playerInfo,
+      //   playerCurrentClubInfo,
+      //   proposedTeamInfo
+      // );
 
       if (!playerInfo || !playerCurrentClubInfo || !proposedTeamInfo) {
         setLoading(false);
@@ -58,17 +58,7 @@ export const InputView: React.FC<{
         '" current team information: "' +
         JSON.stringify(playerCurrentClubInfo) +
         '" proposed team information: "' +
-        proposedTeamInfo +
-        // JSON.stringify({
-        //   Player: "Grayson Doody",
-        //   Position: "Right Back",
-        //   Age: 22,
-        //   Base_Salary: "$71,401.00",
-        //   Guaranteed_Compensation: "$77,383.00",
-        //   Nationality: "USA",
-        //   Contract_End: "",
-        //   Club: "CF Montreal",
-        // }) +
+        JSON.stringify(proposedTeamInfo) +
         MLS_TRADE_RULES +
         ". ";
       // JSON.stringify(teaminfo);
@@ -79,26 +69,27 @@ export const InputView: React.FC<{
       // Give the answer as though you are a trade machine
       // Start your response with "MLS-pal thinks that and end your response with a disclaimer.
       setQuestion("");
-      console.log(sendString);
-      console.log({
-        "Sending axios post request": {
-          question: sendString,
-          username: USERNAME,
-          playerInfo: JSON.stringify(playerInfo),
-          playerCurrentClubInfo: JSON.stringify(playerCurrentClubInfo),
-          proposedTeamInfo: JSON.stringify(proposedTeamInfo),
-        },
-      });
+      // console.log(sendString);
+      // console.log({
+      //   "Sending axios post request": {
+      //     question: sendString,
+      //     username: USERNAME,
+      //     playerInfo: JSON.stringify(playerInfo),
+      //     playerCurrentClubInfo: JSON.stringify(playerCurrentClubInfo),
+      //     proposedTeamInfo: JSON.stringify(proposedTeamInfo),
+      //   },
+      // });
 
       axios({
         method: "post",
         url: endpoint,
         data: {
           question: sendString,
+          q: constructedQuestion,
           username: USERNAME,
-          playerInfo,
-          playerCurrentClubInfo,
-          proposedTeamInfo,
+          p: playerInfo,
+          pc: playerCurrentClubInfo,
+          pt: proposedTeamInfo,
         },
       })
         .then((response) => {
@@ -162,10 +153,10 @@ export const InputView: React.FC<{
             >
               <option value={undefined}></option>
               {playersJson
-                .sort((a, b) => a.lastName.localeCompare(b.lastName))
+                .sort((a, b) => a.Last_Name.localeCompare(b.Last_Name))
                 .map((player) => (
-                  <option value={player.firstName + " " + player.lastName}>
-                    {player.firstName + " " + player.lastName}
+                  <option value={player.First_Name + " " + player.Last_Name}>
+                    {player.First_Name + " " + player.Last_Name}
                   </option>
                 ))}
             </select>

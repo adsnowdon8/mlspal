@@ -51,13 +51,23 @@ const columns = [
     footer: (info) => info.column.id,
     sortingFn: "alphanumeric",
   }),
-  // columnHelper.accessor("foundingYear", {
-  //   header: "Founding Year",
-  //   footer: (info) => info.column.id,
-  //   sortingFn: "alphanumeric",
-  // }),
   columnHelper.accessor("MLS_Playoffs", {
     header: "Made 2024 Playoffs",
+    footer: (info) => info.column.id,
+    sortingFn: "alphanumeric",
+  }),
+  columnHelper.accessor("Roster_Model", {
+    header: "Roster Model",
+    footer: (info) => info.column.id,
+    sortingFn: "alphanumeric",
+  }),
+  columnHelper.accessor("Number_of_Roster_Slots_Filled", {
+    header: "Number of Roster Slots Filled",
+    footer: (info) => info.column.id,
+    sortingFn: "alphanumeric",
+  }),
+  columnHelper.accessor("International_Slots_Filled", {
+    header: "International Slots Filled",
     footer: (info) => info.column.id,
     sortingFn: "alphanumeric",
   }),
@@ -69,15 +79,7 @@ function TeamTable() {
   const data = teamsJson;
   const flatData = useMemo(() => {
     //sort data based on s orting state
-    const filteredData = data.filter((row) => {
-      //   const s = row.combinedRowInfo?.includes(searchVal);
-      //   const t =
-      // !filterTeam || filterTeam === ALL_TEAMS || row.club === filterTeam; // default value doesnt really work
-      //   const p = filterPositions === ALL_POSITIONS;
-      // TODO add position filtering here -> convert from position to name
-      return true;
-    });
-    return filteredData?.flatMap((page) => page) ?? [];
+    return data?.flatMap((page) => page) ?? [];
   }, [data]);
 
   const isLoading = false;

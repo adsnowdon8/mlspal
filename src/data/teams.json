@@ -6,7 +6,10 @@
     "GM": "Chris Henderson",
     "City": "Atlanta, GA",
     "Position_End_Last_Season": "9th in East",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "28",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "8/8"
   },
   {
     "Team": "Austin FC",
@@ -15,7 +18,10 @@
     "GM": "Rodolfo Borrell",
     "City": "Austin, TX",
     "Position_End_Last_Season": "10th in West",
-    "MLS_Playoffs": "No"
+    "MLS_Playoffs": "No",
+    "Number_of_Roster_Slots_Filled": "24",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "8/9"
   },
   {
     "Team": "Charlotte FC",
@@ -24,7 +30,10 @@
     "GM": "Zoran Krneta",
     "City": "Charlotte, NC",
     "Position_End_Last_Season": "5th in East",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "28",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "8/8"
   },
   {
     "Team": "Chicago Fire",
@@ -33,16 +42,22 @@
     "GM": "Greg Berhalter",
     "City": "Chicago, IL",
     "Position_End_Last_Season": "15th in East",
-    "MLS_Playoffs": "No"
+    "MLS_Playoffs": "No",
+    "Number_of_Roster_Slots_Filled": "28",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "7/8"
   },
   {
-    "Team": "FC Cincinnati",
+    "Team": "FC Cincinatti",
     "Coach": "Pat Noonan",
     "Owner": "Carl H. Lindner III",
     "GM": "Chris Albright",
     "City": "Cincinnati, OH",
     "Position_End_Last_Season": "3rd in East",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "25",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "6/8"
   },
   {
     "Team": "Colorado Rapids",
@@ -51,7 +66,10 @@
     "GM": "Padraig Smith",
     "City": "Commerce City, CO",
     "Position_End_Last_Season": "7th in West",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "26",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "4/4"
   },
   {
     "Team": "Columbus Crew",
@@ -60,7 +78,10 @@
     "GM": "Tim Bezbatchenko",
     "City": "Columbus, OH",
     "Position_End_Last_Season": "2nd in East",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "23",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "7/8"
   },
   {
     "Team": "DC United",
@@ -69,7 +90,10 @@
     "GM": "Ally Mackay ",
     "City": "Washington, DC",
     "Position_End_Last_Season": "10th in East",
-    "MLS_Playoffs": "No"
+    "MLS_Playoffs": "No",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "8/8"
   },
   {
     "Team": "FC Dallas",
@@ -78,7 +102,10 @@
     "GM": "Andre Zanotta",
     "City": "Frisco, TX",
     "Position_End_Last_Season": "11th in West",
-    "MLS_Playoffs": "No"
+    "MLS_Playoffs": "No",
+    "Number_of_Roster_Slots_Filled": "29",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "9/9"
   },
   {
     "Team": "Houston Dynamo",
@@ -87,7 +114,10 @@
     "GM": "Pat Onstad",
     "City": "Houston, TX",
     "Position_End_Last_Season": "5th in West",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "6/7"
   },
   {
     "Team": "Inter Miami",
@@ -96,7 +126,10 @@
     "GM": "Raul Sanllehi",
     "City": "Fort Lauderdale, FL",
     "Position_End_Last_Season": "1st in East",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "14/13"
   },
   {
     "Team": "LA Galaxy",
@@ -105,7 +138,10 @@
     "GM": "Will Kuntz",
     "City": "Carson, CA",
     "Position_End_Last_Season": "2nd in West",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "28",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "12/11"
   },
   {
     "Team": "LAFC",
@@ -114,7 +150,10 @@
     "GM": "John Thorrington ",
     "City": "Los Angeles, CA",
     "Position_End_Last_Season": "1st in West",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "26",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "12/11"
   },
   {
     "Team": "Minnesota United",
@@ -123,7 +162,10 @@
     "GM": "Khaled El-Ahmad",
     "City": "Saint Paul, MN",
     "Position_End_Last_Season": "6th in West",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "24",
+    "Roster_Model": "U22 Initiative",
+    "International_Slots_Filled": "8/8"
   },
   {
     "Team": "CF Montreal",
@@ -132,25 +174,34 @@
     "GM": "Luca Saputo",
     "City": "Montreal, Canada",
     "Position_End_Last_Season": "8th in East",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "U22 Initiative",
+    "International_Slots_Filled": "7/5"
   },
   {
-    "Team": "Nashville FC",
+    "Team": "Nashville SC",
     "Coach": "BJ Callaghan",
     "Owner": "John Ingram",
     "GM": "Mike Jacob's",
     "City": "Nashville, TN",
     "Position_End_Last_Season": "13th in East",
-    "MLS_Playoffs": "No"
+    "MLS_Playoffs": "No",
+    "Number_of_Roster_Slots_Filled": "26",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "5/5"
   },
   {
-    "Team": "New England Revolution",
+    "Team": "NE Revolution",
     "Coach": "Caleb Porter",
     "Owner": "Kraft Group",
     "GM": "Curt Onalfo",
     "City": "Foxborough, MA",
     "Position_End_Last_Season": "14th in East",
-    "MLS_Playoffs": "No"
+    "MLS_Playoffs": "No",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "8/7"
   },
   {
     "Team": "New York City FC",
@@ -159,7 +210,10 @@
     "GM": "Brad Sims",
     "City": "New York City, NY",
     "Position_End_Last_Season": "6th in East",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "25",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "4/8"
   },
   {
     "Team": "NY Red Bulls",
@@ -168,7 +222,10 @@
     "GM": "Julian De Guzman",
     "City": "Harrison, NJ",
     "Position_End_Last_Season": "7th in East",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "28",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "12/11"
   },
   {
     "Team": "Orlando City",
@@ -177,7 +234,10 @@
     "GM": "Luiz Muzzi",
     "City": "Orlando, FL",
     "Position_End_Last_Season": "4th in East",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "23",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "5/7"
   },
   {
     "Team": "Philadelphia Union",
@@ -186,7 +246,10 @@
     "GM": "Ernst Tanner",
     "City": "Chester, PA",
     "Position_End_Last_Season": "12th in East",
-    "MLS_Playoffs": "No"
+    "MLS_Playoffs": "No",
+    "Number_of_Roster_Slots_Filled": "26",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "7/7"
   },
   {
     "Team": "Portland Timbers",
@@ -195,7 +258,10 @@
     "GM": "Ned Grabavoy",
     "City": "Portland, OR",
     "Position_End_Last_Season": "9th in West",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "24",
+    "Roster_Model": "U22 Initiative",
+    "International_Slots_Filled": "8/7"
   },
   {
     "Team": "Real Salt Lake",
@@ -204,7 +270,10 @@
     "GM": "Kurt Schmid",
     "City": "Salt Lake City, UT",
     "Position_End_Last_Season": "3rd in West",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "U22 Initiative",
+    "International_Slots_Filled": "10/10"
   },
   {
     "Team": "San Diego FC",
@@ -213,7 +282,10 @@
     "GM": "Tyler Heaps",
     "City": "San Diego, CA",
     "Position_End_Last_Season": "N/A",
-    "MLS_Playoffs": "N/A"
+    "MLS_Playoffs": "N/A",
+    "Number_of_Roster_Slots_Filled": "25",
+    "Roster_Model": "U22 Initiative",
+    "International_Slots_Filled": "9/9"
   },
   {
     "Team": "San Jose Earthquakes",
@@ -222,7 +294,10 @@
     "GM": "Bruce Arena",
     "City": "San Jose, CA",
     "Position_End_Last_Season": "14th in West",
-    "MLS_Playoffs": "No"
+    "MLS_Playoffs": "No",
+    "Number_of_Roster_Slots_Filled": "28",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "6/7"
   },
   {
     "Team": "Seattle Sounders",
@@ -231,7 +306,10 @@
     "GM": "Craig Waibel",
     "City": "Seattle, WA",
     "Position_End_Last_Season": "4th in West",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "25",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "3/4"
   },
   {
     "Team": "Sporting KC",
@@ -240,7 +318,10 @@
     "GM": "Mike Burns",
     "City": "Kansas City, KS",
     "Position_End_Last_Season": "13th in West",
-    "MLS_Playoffs": "No"
+    "MLS_Playoffs": "No",
+    "Number_of_Roster_Slots_Filled": "25",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "6/8"
   },
   {
     "Team": "St Louis City SC",
@@ -249,7 +330,10 @@
     "GM": "Lutz Pfannenstiel",
     "City": "St. Louis, MO",
     "Position_End_Last_Season": "12th in West",
-    "MLS_Playoffs": "No"
+    "MLS_Playoffs": "No",
+    "Number_of_Roster_Slots_Filled": "28",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "7/8"
   },
   {
     "Team": "Toronto FC",
@@ -258,7 +342,10 @@
     "GM": "Jason Hernandez",
     "City": "Toronto, Canada ",
     "Position_End_Last_Season": "11th in East",
-    "MLS_Playoffs": "No"
+    "MLS_Playoffs": "No",
+    "Number_of_Roster_Slots_Filled": "26",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "12/9"
   },
   {
     "Team": "Vancouver Whitecaps",
@@ -267,6 +354,9 @@
     "GM": "Axel Schuster",
     "City": "Vancouver, Canada",
     "Position_End_Last_Season": "8th in West",
-    "MLS_Playoffs": "Yes"
+    "MLS_Playoffs": "Yes",
+    "Number_of_Roster_Slots_Filled": "26",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "10/9"
   }
 ]

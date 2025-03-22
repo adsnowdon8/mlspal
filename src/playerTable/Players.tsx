@@ -1,15 +1,15 @@
-import players from "../data/players_transformed.json";
+import players from "../data/players.json";
 
 export type Player = {
-  firstName: string;
-  lastName: string;
-  position: string;
-  age: number;
-  baseSalary: string;
-  guaranteedCompensation: string;
-  nationality: string;
-  contractEnd: string;
-  club: string;
-  combinedRowInfo?: string;
+  First_Name: string;
+  Last_Name: string;
+  Contract_End: string;
+  Option_Years: string;
+  TEAM: string;
+  Age: number;
+  Position: string;
+  Nationality: string;
+  Domestic_or_International: string;
+  Minutes_Played: string;
 };
 export const playersJson: Player[] = players;

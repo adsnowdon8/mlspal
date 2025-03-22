@@ -17,5 +17,8 @@ export type Team = {
   City: string;
   Position_End_Last_Season: string;
   MLS_Playoffs: string;
+  Number_of_Roster_Slots_Filled: string;
+  Roster_Model: string;
+  International_Slots_Filled: string;
 };
 export const teamsJson: Team[] = teams;
