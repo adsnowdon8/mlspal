@@ -87,9 +87,9 @@ export const InputView: React.FC<{
           question: sendString,
           q: constructedQuestion,
           username: USERNAME,
-          p: playerInfo,
-          pc: playerCurrentClubInfo,
-          pt: proposedTeamInfo,
+          p: JSON.stringify(playerInfo),
+          pc: JSON.stringify(playerCurrentClubInfo),
+          pt: JSON.stringify(proposedTeamInfo),
         },
       })
         .then((response) => {
