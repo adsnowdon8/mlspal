@@ -8,19 +8,57 @@ import {
   server_GEMINI_ENDPOINT,
   USERNAME,
 } from "../constants";
-import { formatTextToHTML } from "../utils";
 import { ResponseComponent } from "./ResponseComponent";
+import "./Input.css";
+
+// import Select from "react-select";
+import ReactSelect, { SingleValue } from "react-select";
+
+// import "./trade.css";
+const undefinedOption = { label: "", value: "" };
 
 export const InputView: React.FC<{
   // prompViewState: [boolean, React.Dispatch<React.SetStateAction<boolean>>];
 }> = () => {
-  const [selectedPlayer, setSelectedPlayer] = useState<string>();
-  const [selectedTeam, setSelectedTeam] = useState<string>();
+  const [selectedPlayer, setSelectedPlayer] =
+    useState<SingleValue<{ label: string; value: string }>>();
+  const [selectedTeam, setSelectedTeam] =
+    useState<SingleValue<{ label: string; value: string }>>();
+
   const [loading, setLoading] = useState<boolean>();
   const [questionsAsked, setQuestionsAsked] = useState<string[]>([]);
   const [question, setQuestion] = useState("");
   const [responses, setResponses] = useState<string[]>([]);
   const [response, setResponse] = useState<string>("");
+  // someArrayOfStrings.map(opt => ({ label: opt, value: opt }));
+
+  const playerOptions = useMemo(() => {
+    return playersJson
+      .sort((a, b) => a.Last_Name.localeCompare(b.Last_Name))
+      .map(
+        (player) => {
+          return {
+            label: player.First_Name + " " + player.Last_Name,
+            value: player.First_Name + " " + player.Last_Name,
+          };
+        }
+        // <option value={player.First_Name + " " + player.Last_Name}>
+        //   {player.First_Name + " " + player.Last_Name}
+        // </option>
+      );
+  }, []);
+
+  const teamOptions = useMemo(() => {
+    return teamsJson
+      .sort((a, b) => a.Team.localeCompare(b.Team))
+      .map((team) => {
+        return {
+          label: team.Team,
+          value: team.Team,
+        };
+      });
+    //  <option value={team.Team}>{team.Team}</option>);
+  }, []);
 
   const createPost = useCallback(
     (endpoint: string) => {
@@ -31,14 +69,14 @@ export const InputView: React.FC<{
       setQuestionsAsked((q) => [...q, question]);
       const playerInfo = playersJson.find(
         (player) =>
-          player.First_Name + " " + player.Last_Name === selectedPlayer
+          player.First_Name + " " + player.Last_Name === selectedPlayer?.value
       );
 
       const playerCurrentClubInfo = teamsJson.find((team) => {
         return team.Team === playerInfo?.TEAM;
       });
       const proposedTeamInfo = teamsJson.find(
-        (team) => team.Team === selectedTeam
+        (team) => team.Team === selectedTeam?.value
       );
       // console.log(
       //   "Player Datas",
@@ -143,40 +181,50 @@ export const InputView: React.FC<{
       {response ? (
         <ResponseComponent response={response} setResponse={setResponse} />
       ) : (
-        <div className="h-full flex flex-col items-center justify-center gap-2 pb-40">
-          <div className="mb-3">
-            {"Select a player: "}
-            <select
-              onChange={(e) => setSelectedPlayer(e.target.value)}
+        <div className="h-full flex flex-col items-center justify-center gap-5 pb-40">
+          <div className=" flex items-center gap-1">
+            <p> {"Select a Player: "}</p>
+            <ReactSelect
+              className="react-select min-w-80"
+              classNamePrefix="react-select"
+              options={[undefinedOption, ...playerOptions]}
+              placeholder=""
               value={selectedPlayer}
-              className="border rounded"
-            >
-              <option value={undefined}></option>
-              {playersJson
-                .sort((a, b) => a.Last_Name.localeCompare(b.Last_Name))
-                .map((player) => (
-                  <option value={player.First_Name + " " + player.Last_Name}>
-                    {player.First_Name + " " + player.Last_Name}
-                  </option>
-                ))}
-            </select>
+              styles={{
+                option: (provided) => ({
+                  ...provided,
+                  minHeight: "40px", // Set a minimum height for options
+                  display: "flex",
+                  alignItems: "center", // Ensure text is vertically centered
+                }),
+              }}
+              onChange={(opt) =>
+                setSelectedPlayer(opt?.label === "" ? undefined : opt)
+              }
+              maxMenuHeight={500}
+            />
           </div>
-          <div>
-            {"Select a team: "}
-            <select
-              onChange={(e) => setSelectedTeam(e.target.value)}
+          <div className="flex items-center gap-1">
+            <p>Select a Team:</p>
+            <ReactSelect
+              className="react-select min-w-80"
+              classNamePrefix="react-select"
+              options={[undefinedOption, ...teamOptions]}
+              styles={{
+                option: (provided) => ({
+                  ...provided,
+                  minHeight: "40px", // Set a minimum height for options
+                  display: "flex",
+                  alignItems: "center", // Ensure text is vertically centered
+                }),
+              }}
+              placeholder=""
               value={selectedTeam}
-              className="border rounded"
-            >
-              <option value={undefined}> </option>
-              {teamsJson
-                .sort((a, b) => a.Team.localeCompare(b.Team))
-                .map((team) => (
-                  <option value={team.Team}>{team.Team}</option>
-                ))}
-            </select>
+              onChange={(opt) =>
+                setSelectedTeam(opt?.label === "" ? undefined : opt)
+              }
+            />
           </div>
-
           <button
             className="bg-green-300 border rounded w-52 h-8 disabled:bg-gray-300"
             onClick={() => createPost(server_GEMINI_ENDPOINT)}
