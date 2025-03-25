@@ -146,7 +146,7 @@ export const PlayerTable2 = () => {
 
   return (
     <div
-      className="w-full h-full text-center min-w-0"
+      className="w-full h-full text-center min-w-0 px-1"
       style={{
         overflow: "auto",
         // position: "relative",

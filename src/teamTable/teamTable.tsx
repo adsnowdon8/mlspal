@@ -106,7 +106,7 @@ function TeamTable() {
 
   return (
     <div
-      className="text-center w-full h-ful"
+      className="text-center w-full h-ful px-1"
       ref={tableContainerRef}
       style={{
         overflow: "auto",
