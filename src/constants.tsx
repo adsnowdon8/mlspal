@@ -408,6 +408,16 @@ export const positionAbrevs: string[] = [
   "Midfielder",
   "Forward",
 ];
+export const rosterDesignations: string[] = [
+  "Designated Player",
+  "Senior",
+  "International",
+  "Supplemental",
+  "Supplemental(GA)",
+  "U22 Initiative",
+  "Homegrown",
+  "Off-Roster Homegrown",
+];
 
 export const abbrevsToPosition = new Map([
   ["GK", "Goalkeeper"],

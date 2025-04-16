@@ -189,7 +189,7 @@
     "TEAM": "Atlanta United",
     "Age": 17,
     "Position": "Midfielder ",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": "0"
@@ -306,7 +306,7 @@
     "TEAM": "Atlanta United",
     "Age": 20,
     "Position": "Goalkeeper",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA & Jamaica",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": "0"
@@ -332,7 +332,7 @@
     "TEAM": "Atlanta United",
     "Age": 31,
     "Position": "Forward",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "Japan & USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": "14"
@@ -1528,7 +1528,7 @@
     "TEAM": "Chicago Fire",
     "Age": 18,
     "Position": "Forward",
-    "Roster_Designation": "Supplemental (GA)",
+    "Roster_Designation": "Supplemental(GA)",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -2074,7 +2074,7 @@
     "TEAM": "Colorado Rapids",
     "Age": 20,
     "Position": "Forward",
-    "Roster_Designation": "Supplemental (GA)",
+    "Roster_Designation": "Supplemental(GA)",
     "Nationality": "Saint Vincent and the Grenadines",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -2139,7 +2139,7 @@
     "TEAM": "Colorado Rapids",
     "Age": 19,
     "Position": "Forward",
-    "Roster_Designation": "Supplemental (GA)",
+    "Roster_Designation": "Supplemental(GA)",
     "Nationality": "Canada",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -3556,7 +3556,7 @@
     "TEAM": "Houston Dynamo",
     "Age": 21,
     "Position": "Forward",
-    "Roster_Designation": "Supplemental (GA)",
+    "Roster_Designation": "Supplemental(GA)",
     "Nationality": "Ghana",
     "Domestic_or_International": "International",
     "Minutes_Played": ""
@@ -4115,7 +4115,7 @@
     "TEAM": "Inter Miami",
     "Age": 23,
     "Position": "Forward",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -4193,7 +4193,7 @@
     "TEAM": "Inter Miami",
     "Age": 21,
     "Position": "Midfielder",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -5025,7 +5025,7 @@
     "TEAM": "Minnesota United",
     "Age": 24,
     "Position": "Defender",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "Germany",
     "Domestic_or_International": "International",
     "Minutes_Played": ""
@@ -5103,7 +5103,7 @@
     "TEAM": "Minnesota United",
     "Age": 24,
     "Position": "Defender",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -5129,7 +5129,7 @@
     "TEAM": "Minnesota United",
     "Age": 25,
     "Position": "Defender",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -5142,7 +5142,7 @@
     "TEAM": "Minnesota United",
     "Age": 21,
     "Position": "Midfielder",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "Togo",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -5220,7 +5220,7 @@
     "TEAM": "Minnesota United",
     "Age": 25,
     "Position": "Forward",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "England",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -5233,7 +5233,7 @@
     "TEAM": "Minnesota United",
     "Age": 25,
     "Position": "Goalkeeper",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -5441,7 +5441,7 @@
     "TEAM": "Nashville SC",
     "Age": 21,
     "Position": "Goalkeeper",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -5467,7 +5467,7 @@
     "TEAM": "Nashville SC",
     "Age": 19,
     "Position": "Midfielder",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -5506,7 +5506,7 @@
     "TEAM": "Nashville SC",
     "Age": 26,
     "Position": "Defender",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -6117,7 +6117,7 @@
     "TEAM": "New York City FC",
     "Age": 31,
     "Position": "Goalkeeper",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "Canada",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -6195,7 +6195,7 @@
     "TEAM": "New York City FC",
     "Age": 24,
     "Position": "Goalkeeper",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -6351,7 +6351,7 @@
     "TEAM": "New York City FC",
     "Age": 23,
     "Position": "Defender",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -6377,7 +6377,7 @@
     "TEAM": "NY Red Bulls",
     "Age": 25,
     "Position": "Goalkeeper",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -6910,7 +6910,7 @@
     "TEAM": "Orlando City",
     "Age": 19,
     "Position": "Midfielder",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -6962,7 +6962,7 @@
     "TEAM": "Orlando City",
     "Age": 21,
     "Position": "Midfielder",
-    "Roster_Designation": "Supplemental (GA)",
+    "Roster_Designation": "Supplemental(GA)",
     "Nationality": "Ghana",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -7105,7 +7105,7 @@
     "TEAM": "Orlando City",
     "Age": 20,
     "Position": "Defender",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -7664,7 +7664,7 @@
     "TEAM": "Portland Timbers",
     "Age": 32,
     "Position": "Defender",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -7742,7 +7742,7 @@
     "TEAM": "Portland Timbers",
     "Age": 28,
     "Position": "Goalkeeper",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "Canada",
     "Domestic_or_International": "International",
     "Minutes_Played": ""
@@ -8548,7 +8548,7 @@
     "TEAM": "San Jose Earthquakes",
     "Age": 22,
     "Position": "Defender",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -8600,7 +8600,7 @@
     "TEAM": "San Jose Earthquakes",
     "Age": 23,
     "Position": "Defender",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -10329,7 +10329,7 @@
     "TEAM": "Vancouver Whitecaps",
     "Age": 24,
     "Position": "Midfielder",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "Canada",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -10368,7 +10368,7 @@
     "TEAM": "Vancouver Whitecaps",
     "Age": 20,
     "Position": "Defender",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "Australia",
     "Domestic_or_International": "International",
     "Minutes_Played": ""
@@ -10407,7 +10407,7 @@
     "TEAM": "Vancouver Whitecaps",
     "Age": 19,
     "Position": "Defender",
-    "Roster_Designation": "Supplemental (GA)",
+    "Roster_Designation": "Supplemental(GA)",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""
@@ -10420,7 +10420,7 @@
     "TEAM": "Vancouver Whitecaps",
     "Age": 25,
     "Position": "Midfielder",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "Cameroon",
     "Domestic_or_International": "International ",
     "Minutes_Played": ""
@@ -10706,7 +10706,7 @@
     "TEAM": "San Diego FC",
     "Age": 22,
     "Position": "Defender",
-    "Roster_Designation": "Supplemental (GA)",
+    "Roster_Designation": "Supplemental(GA)",
     "Nationality": "Senegal",
     "Domestic_or_International": "International",
     "Minutes_Played": ""
@@ -10758,7 +10758,7 @@
     "TEAM": "San Diego FC",
     "Age": 29,
     "Position": "Goalkeeper",
-    "Roster_Designation": "Supplemental ",
+    "Roster_Designation": "Supplemental",
     "Nationality": "Mexico",
     "Domestic_or_International": "Domestic",
     "Minutes_Played": ""

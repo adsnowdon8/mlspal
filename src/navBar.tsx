@@ -22,13 +22,26 @@ const NavBar = () => {
       <div className="flex bg-gray-100 items-center justify-between">
         <div className="flex gap-3 p-5 items-center">
           <NavLink className="pr-8 pl-5" to="/">
-            <h1 className="font-bold  text-xl"> MLS Pal</h1>
+            <h1 className="font-bold  text-xl hover:underline"> MLS Pal</h1>
           </NavLink>
-          <NavLink to="/players">Player Table</NavLink>
-          <NavLink to="/teams">Team Table</NavLink>
-          <NavLink to="/trade">Trade</NavLink>
+          <NavLink to="/players" className="hover:underline">
+            Player Table
+          </NavLink>
+          <NavLink to="/teams" className="hover:underline">
+            Team Table
+          </NavLink>
+          <NavLink to="/teams" className="hover:underline">
+            News
+          </NavLink>
+
+          <NavLink to="/trade" className="hover:underline">
+            Trade
+          </NavLink>
         </div>
-        <a href="mailto:hi@mlspal.app" className="pr-5">
+        <a
+          href="mailto:hi@mlspal.app"
+          className="pr-5 className='hover:underline'"
+        >
           Contact
         </a>
       </div>

@@ -22,7 +22,13 @@ import { teamsJson } from "../Teams";
 declare module "@tanstack/react-table" {
   //allows us to define custom properties for our columns
   interface ColumnMeta<TData extends RowData, TValue> {
-    filterVariant?: "text" | "range" | "select" | "position" | "club";
+    filterVariant?:
+      | "text"
+      | "range"
+      | "select"
+      | "position"
+      | "club"
+      | "rosterDesignation";
   }
 }
 
@@ -90,9 +96,9 @@ export const PlayerTable2 = () => {
         accessorKey: "Roster_Designation",
         header: "Roster Designation",
         enableColumnFilter: false,
-        // meta: {
-        //   filterVariant: "select",
-        // },
+        meta: {
+          filterVariant: "rosterDesignation",
+        },
       },
       {
         accessorKey: "Nationality",
@@ -146,7 +152,7 @@ export const PlayerTable2 = () => {
 
   return (
     <div
-      className="w-full h-full text-center min-w-0 px-1"
+      className="w-full h-full text-center min-w-0 px-1 text-xs"
       style={{
         overflow: "auto",
         // position: "relative",
@@ -205,7 +211,10 @@ export const PlayerTable2 = () => {
         <tbody>
           {table.getRowModel().rows.map((row) => {
             return (
-              <tr key={row.id} className="border-b border-gray-200">
+              <tr
+                key={row.id}
+                className="border-b border-gray-200 hover:bg-gray-50"
+              >
                 {row.getVisibleCells().map((cell) => {
                   return (
                     <td key={cell.id}>
@@ -304,6 +313,22 @@ function Filter({ column }: { column: Column<any, unknown> }) {
             {team.Team}
           </option>
         ))}
+      {/* See faceted column filters example for dynamic select options */}
+      {/* <option value="">All</option>
+      <option value="complicated">complicated</option>
+      <option value="relationship">relationship</option>
+      <option value="single">single</option> */}
+    </select>
+  ) : filterVariant === "rosterDesignation" ? (
+    <select
+      onChange={(e) => column.setFilterValue(e.target.value)}
+      value={columnFilterValue?.toString()}
+      className="font-normal"
+    >
+      <option value={""}> All</option>
+      {positionAbrevs.map((p) => (
+        <option value={abbrevsToPosition.get(p)}>{p}</option>
+      ))}
       {/* See faceted column filters example for dynamic select options */}
       {/* <option value="">All</option>
       <option value="complicated">complicated</option>
