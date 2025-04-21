@@ -1,0 +1,91 @@
+import { useParams } from "react-router-dom";
+import { playersJson } from "./Players";
+
+const fetchPlayerDetails = (playerId: string | undefined) => {
+  if (!playerId) {
+    return null;
+  }
+  const [firstName, lastName] = playerId.split(" ");
+  const player = playersJson.find(
+    (player) =>
+      player.First_Name.toLowerCase() === firstName?.toLowerCase() ||
+      player.Last_Name.toLowerCase() === lastName?.toLowerCase()
+  );
+  if (player) {
+    return {
+      ...player,
+      fullName: `${player.First_Name} ${player.Last_Name}`,
+    };
+  }
+  return null;
+};
+
+export const PlayerPage = () => {
+  const { playerId } = useParams();
+  console.log("Player ID:", playerId);
+
+  // Fetch player details using playerId if needed
+  const playerDetails = fetchPlayerDetails(playerId);
+  console.log("Player Details:", playerDetails);
+
+  return (
+    <div className="flex flex-col items-center p-5 text-gray-800">
+      <div className="flex  items-center">
+        <div
+          style={{
+            width: "64px",
+            height: "64px",
+            borderRadius: "50%",
+            backgroundColor: "#ccc",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: "24px",
+            color: "#fff",
+          }}
+        >
+          {playerId?.charAt(0).toUpperCase()}
+        </div>
+        <h1 className="p-5 text-2xl font-bold"> {playerId} </h1>
+      </div>
+      <div className="flex flex-col items-start gap-2">
+        <p className="">
+          {playerDetails ? `Team: ${playerDetails.TEAM}` : "Team not found"}
+        </p>
+        <p className="">
+          {playerDetails
+            ? `Position: ${playerDetails.Position}`
+            : "Position not found"}
+        </p>
+        <p className="">
+          {playerDetails ? `Age: ${playerDetails.Age}` : "Age not found"}
+        </p>
+        <p className="">
+          {playerDetails
+            ? `Contract End: ${playerDetails.Contract_End}`
+            : "Contract End not found"}
+        </p>
+        <p className="">
+          {playerDetails
+            ? `Option Years: ${playerDetails.Option_Years}`
+            : "Option Years not found"}
+        </p>
+        <p className="">
+          {playerDetails
+            ? `Nationality: ${playerDetails.Nationality}`
+            : "Nationality not found"}
+        </p>
+        {/* <p className="">
+          {playerDetails
+            ? `Domestic or International: ${playerDetails.Domestic_or_International}`
+            : "Domestic or International not found"}
+        </p> */}
+        <p className="">
+          {playerDetails
+            ? `Minutes Played: ${playerDetails.Minutes_Played}`
+            : "Minutes Played not found"}
+        </p>
+      </div>
+    </div>
+  );
+};

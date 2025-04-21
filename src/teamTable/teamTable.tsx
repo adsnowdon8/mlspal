@@ -154,9 +154,12 @@ function TeamTable() {
         </thead>
         <tbody>
           {rows.map((row) => (
-            <tr key={row.id} className="border-b border-grey-200">
+            <tr
+              key={row.id}
+              className="border-b border-grey-200  hover:bg-gray-100"
+            >
               {row.getVisibleCells().map((cell) => (
-                <td key={cell.id}>
+                <td key={cell.id} className="p-3">
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
                 </td>
               ))}

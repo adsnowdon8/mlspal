@@ -18,6 +18,7 @@ import {
 import { Player, playersJson } from "./Players";
 import { abbrevsToPosition, positionAbrevs } from "../constants";
 import { teamsJson } from "../Teams";
+import { useNavigate } from "react-router-dom";
 
 declare module "@tanstack/react-table" {
   //allows us to define custom properties for our columns
@@ -36,6 +37,7 @@ export const PlayerTable2 = () => {
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []
   );
+  const navigate = useNavigate();
 
   const columns = React.useMemo<ColumnDef<Player, any>[]>(
     () => [
@@ -82,24 +84,24 @@ export const PlayerTable2 = () => {
         //   filterVariant: "range",
         // },
       },
-      {
-        accessorKey: "Option_Years",
-        header: () => "Option Years",
-        enableColumnFilter: false,
+      // {
+      //   accessorKey: "Option_Years",
+      //   header: () => "Option Years",
+      //   enableColumnFilter: false,
 
-        // meta: {
-        //   filterVariant: "range",
-        // },
-      },
+      //   // meta: {
+      //   //   filterVariant: "range",
+      //   // },
+      // },
 
-      {
-        accessorKey: "Roster_Designation",
-        header: "Roster Designation",
-        enableColumnFilter: false,
-        meta: {
-          filterVariant: "rosterDesignation",
-        },
-      },
+      // {
+      //   accessorKey: "Roster_Designation",
+      //   header: "Roster Designation",
+      //   enableColumnFilter: false,
+      //   meta: {
+      //     filterVariant: "rosterDesignation",
+      //   },
+      // },
       {
         accessorKey: "Nationality",
         header: "Nationality",
@@ -108,15 +110,15 @@ export const PlayerTable2 = () => {
         //   filterVariant: "range",
         // },
       },
-      {
-        accessorKey: "Domestic_or_International",
-        header: "Domestic or International",
-        enableColumnFilter: false,
+      // {
+      //   accessorKey: "Domestic_or_International",
+      //   header: "Domestic or International",
+      //   enableColumnFilter: false,
 
-        meta: {
-          filterVariant: "range",
-        },
-      },
+      //   meta: {
+      //     filterVariant: "range",
+      //   },
+      // },
       {
         accessorKey: "Minutes_Played",
         header: "Minutes Played",
@@ -137,6 +139,14 @@ export const PlayerTable2 = () => {
     data,
     columns,
     filterFns: {},
+    initialState: {
+      sorting: [
+        {
+          id: "Minutes_Played",
+          desc: true, // sort by name in descending order by default
+        },
+      ],
+    },
     state: {
       columnFilters,
     },
@@ -144,6 +154,7 @@ export const PlayerTable2 = () => {
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(), //client side filtering
     getSortedRowModel: getSortedRowModel(),
+
     // getPaginationRowModel: getPaginationRowModel(),
     debugTable: true,
     // debugHeaders: true,
@@ -152,7 +163,7 @@ export const PlayerTable2 = () => {
 
   return (
     <div
-      className="w-full h-full text-center min-w-0 px-1 text-xs"
+      className="w-full h-full text-center min-w-0 px-1 text-sm"
       style={{
         overflow: "auto",
         // position: "relative",
@@ -213,11 +224,16 @@ export const PlayerTable2 = () => {
             return (
               <tr
                 key={row.id}
-                className="border-b border-gray-200 hover:bg-gray-50"
+                className="border-b border-gray-200 hover:bg-gray-50 hover:cursor-pointer"
+                onClick={() =>
+                  navigate(
+                    `/players/${row.original.First_Name} ${row.original.Last_Name}`
+                  )
+                }
               >
                 {row.getVisibleCells().map((cell) => {
                   return (
-                    <td key={cell.id}>
+                    <td key={cell.id} className="p-1">
                       {flexRender(
                         cell.column.columnDef.cell,
                         cell.getContext()

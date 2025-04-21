@@ -5,6 +5,7 @@ import { LandingPage } from "./LandingPage";
 import TeamTable from "./teamTable/teamTable";
 import { PlayerTable2 } from "./playerTable/PlayerTable2";
 import { Analytics } from "@vercel/analytics/react";
+import { PlayerPage } from "./playerTable/PlayerPage";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/players" element={<PlayerTable2 />} />
         <Route path="/teams" element={<TeamTable />} />
         <Route path="/trade" element={<InputView />} />
+        <Route path="players/:playerId" element={<PlayerPage />} />
       </Routes>
       <Analytics />
     </>

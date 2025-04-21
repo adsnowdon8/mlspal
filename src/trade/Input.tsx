@@ -182,6 +182,22 @@ export const InputView: React.FC<{
         <ResponseComponent response={response} setResponse={setResponse} />
       ) : (
         <div className="h-full flex flex-col items-center justify-center gap-5 pb-40">
+          <h1 className="text-2xl font-bold">Trade Analyzer</h1>
+          <text className="w-1/2 ">
+            Major League Soccer operates under a distinctive set of roster
+            rules, salary caps, and player movement mechanisms that make trades
+            both complex and exciting.
+            <br />
+            <br />
+            Our MLS Trade Machine is built to navigate this unique
+            landscape—analyzing potential trades from multiple angles to assess
+            their feasibility, value, and strategic fit.
+            <br />
+            <br />
+            Whether you’re a fan, analyst, or front-office enthusiast, our tool
+            brings clarity to the possibilities
+          </text>
+
           <div className=" flex items-center gap-1">
             <p> {"Select a Player: "}</p>
             <ReactSelect
