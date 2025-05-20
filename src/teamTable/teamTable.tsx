@@ -106,7 +106,7 @@ function TeamTable() {
 
   return (
     <div
-      className="text-center w-full h-ful px-1"
+      className="text-center w-full h-full px-1 border"
       ref={tableContainerRef}
       style={{
         overflow: "auto",
@@ -114,14 +114,15 @@ function TeamTable() {
         height: "100%",
       }}
     >
-      <table className="w-full">
+      <table className="">
         <thead
           style={{
             position: "sticky",
             top: "0",
             zIndex: 1,
-            background: "white",
+            // background: "white",
           }}
+          className="bg-gray-100"
         >
           {table.getHeaderGroups().map((headerGroup) => (
             <tr

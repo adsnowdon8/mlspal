@@ -18,7 +18,8 @@ import {
 import { Player, playersJson } from "./Players";
 import { abbrevsToPosition, positionAbrevs } from "../constants";
 import { teamsJson } from "../Teams";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { TeamLogoViewer } from "./TeamLogoViewer";
 
 declare module "@tanstack/react-table" {
   //allows us to define custom properties for our columns
@@ -65,10 +66,13 @@ export const PlayerTable2 = () => {
       {
         accessorKey: "TEAM",
         header: "Club",
-        // enableColumnFilter: ,
         meta: {
           filterVariant: "club",
         },
+        // cell: (info) => info.getValue(),
+        cell: (info) => <TeamLogoViewer club={info.getValue()} />,
+        // cell: (info) => <>{info.cell}</>,
+        // cell: <TeamLogoViewer club={info.getValue()} />,
       },
       {
         accessorKey: "Age",
@@ -131,10 +135,7 @@ export const PlayerTable2 = () => {
     []
   );
 
-  // const [data, setData] = React.useState<Person[]>(() => makeData(5_000));
   const [data, setData] = useState<Player[]>(() => playersJson);
-  // const refreshData = () => setData((_old) => makeData(50_000)); //stress test
-
   const table = useReactTable({
     data,
     columns,
@@ -154,11 +155,7 @@ export const PlayerTable2 = () => {
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(), //client side filtering
     getSortedRowModel: getSortedRowModel(),
-
-    // getPaginationRowModel: getPaginationRowModel(),
     debugTable: true,
-    // debugHeaders: true,
-    // debugColumns: false,
   });
 
   return (
@@ -175,9 +172,9 @@ export const PlayerTable2 = () => {
           style={{
             position: "sticky",
             top: "0",
-            zIndex: 1,
-            background: "white",
+            zIndex: 1, // background: "white",
           }}
+          className="bg-gray-100 h-20"
         >
           {table.getHeaderGroups().map((headerGroup) => (
             <tr
@@ -225,11 +222,12 @@ export const PlayerTable2 = () => {
               <tr
                 key={row.id}
                 className="border-b border-gray-200 hover:bg-gray-50 hover:cursor-pointer"
-                onClick={() =>
+                onClick={() => {
+                  console.log(row);
                   navigate(
-                    `/players/${row.original.First_Name} ${row.original.Last_Name}`
-                  )
-                }
+                    `/players/${row.original.First_Name.trim()} ${row.original.Last_Name.trim()}`
+                  );
+                }}
               >
                 {row.getVisibleCells().map((cell) => {
                   return (
@@ -319,7 +317,7 @@ function Filter({ column }: { column: Column<any, unknown> }) {
     <select
       onChange={(e) => column.setFilterValue(e.target.value)}
       value={columnFilterValue?.toString()}
-      className="font-normal"
+      className="font-normal max-w-24"
     >
       <option value={""}> All Teams</option>
       {teamsJson

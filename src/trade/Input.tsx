@@ -78,52 +78,21 @@ export const InputView: React.FC<{
       const proposedTeamInfo = teamsJson.find(
         (team) => team.Team === selectedTeam?.value
       );
-      // console.log(
-      //   "Player Datas",
-      //   playerInfo,
-      //   playerCurrentClubInfo,
-      //   proposedTeamInfo
-      // );
-
       if (!playerInfo || !playerCurrentClubInfo || !proposedTeamInfo) {
         setLoading(false);
         return;
       }
-      const context: string =
-        document_prefix_prompt +
-        'player information: "' +
-        JSON.stringify(playerInfo) +
-        '" current team information: "' +
-        JSON.stringify(playerCurrentClubInfo) +
-        '" proposed team information: "' +
-        JSON.stringify(proposedTeamInfo) +
-        MLS_TRADE_RULES +
-        ". ";
       // JSON.stringify(teaminfo);
-
-      const sendString =
-        context + " Proposed trade: " + constructedQuestion + "\n\n";
-
       // Give the answer as though you are a trade machine
       // Start your response with "MLS-pal thinks that and end your response with a disclaimer.
       setQuestion("");
-      // console.log(sendString);
-      // console.log({
-      //   "Sending axios post request": {
-      //     question: sendString,
-      //     username: USERNAME,
-      //     playerInfo: JSON.stringify(playerInfo),
-      //     playerCurrentClubInfo: JSON.stringify(playerCurrentClubInfo),
-      //     proposedTeamInfo: JSON.stringify(proposedTeamInfo),
-      //   },
-      // });
 
       axios({
         method: "post",
         url: endpoint,
         data: {
-          question: sendString,
           q: constructedQuestion,
+          sol: "short",
           username: USERNAME,
           p: JSON.stringify(playerInfo),
           pc: JSON.stringify(playerCurrentClubInfo),
@@ -182,7 +151,7 @@ export const InputView: React.FC<{
         <ResponseComponent response={response} setResponse={setResponse} />
       ) : (
         <div className="h-full flex flex-col items-center justify-center gap-5 pb-40">
-          <h1 className="text-2xl font-bold">Trade Analyzer</h1>
+          <h1 className="text-2xl font-bold pt-10">Trade Analyzer</h1>
           <text className="w-1/2 ">
             Major League Soccer operates under a distinctive set of roster
             rules, salary caps, and player movement mechanisms that make trades

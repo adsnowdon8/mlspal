@@ -6,11 +6,14 @@ const fetchPlayerDetails = (playerId: string | undefined) => {
     return null;
   }
   const [firstName, lastName] = playerId.split(" ");
-  const player = playersJson.find(
-    (player) =>
-      player.First_Name.toLowerCase() === firstName?.toLowerCase() ||
-      player.Last_Name.toLowerCase() === lastName?.toLowerCase()
-  );
+  const pid = playerId.trim().replace(/\s+/g, "").toLowerCase();
+  const player = playersJson.find((player) => {
+    const pfid = (player.First_Name.trim() + player.Last_Name.trim())
+      .toLowerCase()
+      .replace(/\s+/g, "");
+
+    return pfid === pid;
+  });
   if (player) {
     return {
       ...player,

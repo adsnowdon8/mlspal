@@ -1,4 +1,4 @@
-import players from "../data/players.json";
+import players from "../data/players2.json";
 
 export type Player = {
   First_Name: string;
