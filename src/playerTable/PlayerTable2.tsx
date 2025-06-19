@@ -170,10 +170,9 @@ export const PlayerTable2 = () => {
 
   return (
     <div
-      className="w-full h-full text-center min-w-0 px-1 text-sm"
+      className="w-full h-full text-center min-w-0 text-sm"
       style={{
         overflow: "auto",
-        // position: "relative",
         height: "100%",
       }}
     >
@@ -268,7 +267,6 @@ export const PlayerTable2 = () => {
 function Filter({ column }: { column: Column<any, unknown> }) {
   const columnFilterValue = column.getFilterValue();
   const { filterVariant } = column.columnDef.meta ?? {};
-
   return filterVariant === "range" ? (
     <div>
       <div className="flex space-x-2">

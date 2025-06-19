@@ -12,12 +12,6 @@ export const LandingPage: React.FC = () => {
           <h3>We encourage you to check out the following: </h3>
           <ul className="pl-5 list-disc">
             <li className="mt-2">
-              <b>Trade Machine: </b>
-              Explore the feasibility of any intra league transfer using our
-              trade machine that takes into consideration all of MLS’ rules and
-              regulations.
-            </li>
-            <li className="mt-2">
               <b>Rules Appendix: </b>
               An explanation of MLS rules and some important key terms.
             </li>
@@ -30,6 +24,12 @@ export const LandingPage: React.FC = () => {
               <b>Standings: </b>
               Current league standings and franchises’ leadership and ownership
               information.
+            </li>
+            <li className="mt-2">
+              <b>Trade Machine: </b>
+              Explore the feasibility of any intra league transfer using our
+              trade machine that takes into consideration all of MLS’ rules and
+              regulations.
             </li>
             <li className="mt-2">
               <b>Young Performance Leaders MLS NEXT PRO: </b>

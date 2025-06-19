@@ -98,7 +98,7 @@
     "Contract_End": "12/31/2026",
     "Option_Years": "None",
     "Age": 30,
-    "Position": "Winger",
+    "Position": "Forward",
     "Roster_Designation": "Senior TAM",
     "Nationality": "Georgia",
     "Domestic_or_International": "International"
@@ -137,7 +137,7 @@
     "Contract_End": "12/31/2025",
     "Option_Years": "2026",
     "Age": 23,
-    "Position": "Winger",
+    "Position": "Forward",
     "Roster_Designation": "U22 Initiative ",
     "Nationality": "Colombia",
     "Domestic_or_International": "Domestic"
@@ -202,7 +202,7 @@
     "Contract_End": "12/31/2027",
     "Option_Years": "2028",
     "Age": 20,
-    "Position": "Winger",
+    "Position": "Forward",
     "Roster_Designation": "Homegrown",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic"
@@ -644,7 +644,7 @@
     "Contract_End": "12/31/2027",
     "Option_Years": "2028",
     "Age": 30,
-    "Position": "Forward/Winger",
+    "Position": "Forward/Forward",
     "Roster_Designation": "Designated Player",
     "Nationality": "Albania",
     "Domestic_or_International": "International"
@@ -917,7 +917,7 @@
     "Contract_End": "12/31/2026",
     "Option_Years": "2027",
     "Age": 22,
-    "Position": "Winger",
+    "Position": "Forward",
     "Roster_Designation": "Supplemental",
     "Nationality": "USA",
     "Domestic_or_International": "Domestic"
@@ -9848,7 +9848,7 @@
     "Contract_End": "12/31/2025",
     "Option_Years": "2026",
     "Age": 28,
-    "Position": "Winger",
+    "Position": "Forward",
     "Roster_Designation": "Senior TAM",
     "Nationality": "Portugal",
     "Domestic_or_International": "International"

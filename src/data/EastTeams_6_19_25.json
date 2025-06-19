@@ -1,0 +1,167 @@
+[
+  {
+    "Points": "17",
+    "Team": "Atlanta United",
+    "Coach": "Ronny Delia",
+    "Owner": "Arthur M. Blank",
+    "GM": "Chris Henderson",
+    "City": "Atlanta, GA",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "7/8"
+  },
+  {
+    "Points": "25",
+    "Team": "Charlotte FC",
+    "Coach": "Dean Smith",
+    "Owner": "David A. Tepper",
+    "GM": "Zoran Krneta",
+    "City": "Charlotte, NC",
+    "Number_of_Roster_Slots_Filled": "28",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "8/8"
+  },
+  {
+    "Points": "25",
+    "Team": "Chicago Fire",
+    "Coach": "Greg Berhalter",
+    "Owner": "Jon Mansueto",
+    "GM": "Greg Berhalter",
+    "City": "Chicago, IL",
+    "Number_of_Roster_Slots_Filled": "30",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "8/8"
+  },
+  {
+    "Points": "33",
+    "Team": "FC Cincinatti",
+    "Coach": "Pat Noonan",
+    "Owner": "Carl H. Lindner III",
+    "GM": "Chris Albright",
+    "City": "Cincinnati, OH",
+    "Number_of_Roster_Slots_Filled": "25",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "5/7"
+  },
+  {
+    "Points": "31",
+    "Team": "Columbus Crew",
+    "Coach": "Wilfred Nancy",
+    "Owner": "Haslam Sports Group",
+    "GM": "Tim Bezbatchenko",
+    "City": "Columbus, OH",
+    "Number_of_Roster_Slots_Filled": "26",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "7/8"
+  },
+  {
+    "Points": "18",
+    "Team": "DC United",
+    "Coach": "Troy Lesesne",
+    "Owner": "DC United Holdings",
+    "GM": "Ally Mackay ",
+    "City": "Washington, DC",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "7/8"
+  },
+  {
+    "Points": "29",
+    "Team": "Inter Miami",
+    "Coach": "Javier Mascherano",
+    "Owner": "Jorge Mas",
+    "GM": "Raul Sanllehi",
+    "City": "Fort Lauderdale, FL",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "14/14"
+  },
+  {
+    "Points": "11",
+    "Team": "CF Montreal",
+    "Coach": "Marco Donadel (interim)",
+    "Owner": "Joey Saputo ",
+    "GM": "Luca Saputo",
+    "City": "Montreal, Canada",
+    "Number_of_Roster_Slots_Filled": "26",
+    "Roster_Model": "U22 Initiative",
+    "International_Slots_Filled": "7/5"
+  },
+  {
+    "Points": "32",
+    "Team": "Nashville FC",
+    "Coach": "BJ Callaghan",
+    "Owner": "John Ingram",
+    "GM": "Mike Jacobs",
+    "City": "Nashville, TN",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "5/5"
+  },
+  {
+    "Points": "23",
+    "Team": "NE Revolution",
+    "Coach": "Caleb Porter",
+    "Owner": "Kraft Group",
+    "GM": "Curt Onalfo",
+    "City": "Foxborough, MA",
+    "Number_of_Roster_Slots_Filled": "26",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "8/8"
+  },
+  {
+    "Points": "28",
+    "Team": "New York City FC",
+    "Coach": "Pascal Jansen",
+    "Owner": "City Football Group",
+    "GM": "Brad Sims",
+    "City": "New York City, NY",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "5/8"
+  },
+  {
+    "Points": "27",
+    "Team": "NY Red Bulls",
+    "Coach": "Sandro Schwarz",
+    "Owner": "Red Bull GmbH",
+    "GM": "Julian De Guzman",
+    "City": "Harrison, NJ",
+    "Number_of_Roster_Slots_Filled": "28",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "12/11"
+  },
+  {
+    "Points": "30",
+    "Team": "Orlando City",
+    "Coach": "Oscar Pareja",
+    "Owner": "The Wild Family",
+    "GM": "Luiz Muzzi",
+    "City": "Orlando, FL",
+    "Number_of_Roster_Slots_Filled": "23",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "6/7"
+  },
+  {
+    "Points": "37",
+    "Team": "Philadelphia Union",
+    "Coach": "Bradley Carnell",
+    "Owner": "Jay Sugarman",
+    "GM": "Ernst Tanner",
+    "City": "Chester, PA",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "7/7"
+  },
+  {
+    "Points": "13",
+    "Team": "Toronto FC",
+    "Coach": "Robin Fraser",
+    "Owner": "Maple Lead Sports & Entertainment ",
+    "GM": "Jason Hernandez",
+    "City": "Toronto, Canada ",
+    "Number_of_Roster_Slots_Filled": "26",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "13/10"
+  }
+]

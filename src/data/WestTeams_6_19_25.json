@@ -1,0 +1,167 @@
+[
+  {
+    "Points": "26",
+    "Team": "Austin FC",
+    "Coach": "Nico Estevez",
+    "Owner": "Anthony Precourt",
+    "GM": "Rodolfo Borrell",
+    "City": "Austin, TX",
+    "Number_of_Roster_Slots_Filled": "24",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "7/9"
+  },
+  {
+    "Points": "22",
+    "Team": "Colorado Rapids",
+    "Coach": "Chris Armas",
+    "Owner": "Kroenke Sports & Entertainment",
+    "GM": "Padraig Smith",
+    "City": "Commerce City, CO",
+    "Number_of_Roster_Slots_Filled": "25",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "4/4"
+  },
+  {
+    "Points": "21",
+    "Team": "FC Dallas",
+    "Coach": "Eric Quill",
+    "Owner": "The Hunt Family",
+    "GM": "Andre Zanotta",
+    "City": "Frisco, TX",
+    "Number_of_Roster_Slots_Filled": "28",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "8/9"
+  },
+  {
+    "Points": "20",
+    "Team": "Houston Dynamo",
+    "Coach": "Ben Olsen",
+    "Owner": "Ted Segal",
+    "GM": "Pat Onstad",
+    "City": "Houston, TX",
+    "Number_of_Roster_Slots_Filled": "30",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "10/8"
+  },
+  {
+    "Points": "8",
+    "Team": "LA Galaxy",
+    "Coach": "Greg Vanney",
+    "Owner": "Anschutz Entertainment Group",
+    "GM": "Will Kuntz",
+    "City": "Carson, CA",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "12/11"
+  },
+  {
+    "Points": "26",
+    "Team": "LAFC",
+    "Coach": "Steve Cherundolo",
+    "Owner": "Bennett Rosenthal",
+    "GM": "John Thorrington ",
+    "City": "Los Angeles, CA",
+    "Number_of_Roster_Slots_Filled": "28",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "12/11"
+  },
+  {
+    "Points": "30",
+    "Team": "Minnesota",
+    "Coach": "Eric Ramsay",
+    "Owner": "Dr Bill McGuire",
+    "GM": "Khaled El-Ahmad",
+    "City": "Saint Paul, MN",
+    "Number_of_Roster_Slots_Filled": "25",
+    "Roster_Model": "U22 Initiative",
+    "International_Slots_Filled": "8/8"
+  },
+  {
+    "Points": "30",
+    "Team": "Portland Timbers",
+    "Coach": "Phil Neville",
+    "Owner": "Merritt Paulson",
+    "GM": "Ned Grabavoy",
+    "City": "Portland, OR",
+    "Number_of_Roster_Slots_Filled": "24",
+    "Roster_Model": "U22 Initiative",
+    "International_Slots_Filled": "6/6"
+  },
+  {
+    "Points": "18",
+    "Team": "Real Salt Lake",
+    "Coach": "Pablo Mastroeni",
+    "Owner": "David Blitzer",
+    "GM": "Kurt Schmid",
+    "City": "Salt Lake City, UT",
+    "Number_of_Roster_Slots_Filled": "29",
+    "Roster_Model": "U22 Initiative",
+    "International_Slots_Filled": "11/11"
+  },
+  {
+    "Points": "33",
+    "Team": "San Diego FC",
+    "Coach": "Mikey Varas",
+    "Owner": "Mohamed Mansour",
+    "GM": "Tyler Heaps",
+    "City": "San Diego, CA",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "U22 Initiative",
+    "International_Slots_Filled": "9/9"
+  },
+  {
+    "Points": "23",
+    "Team": "San Jose Earthquakes",
+    "Coach": "Bruce Arena",
+    "Owner": "John Fisher",
+    "GM": "Bruce Arena",
+    "City": "San Jose, CA",
+    "Number_of_Roster_Slots_Filled": "29",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "6/6"
+  },
+  {
+    "Points": "26",
+    "Team": "Seattle Sounders",
+    "Coach": "Brian Schmetzer",
+    "Owner": "Adrian Hanauer",
+    "GM": "Craig Waibel",
+    "City": "Seattle, WA",
+    "Number_of_Roster_Slots_Filled": "27",
+    "Roster_Model": "Designated Player",
+    "International_Slots_Filled": "4/4"
+  },
+  {
+    "Points": "16",
+    "Team": "Sporting KC",
+    "Coach": "Kerry Zavagnin (interim)",
+    "Owner": "Sporting Club",
+    "GM": "Mike Burns",
+    "City": "Kansas City, KS",
+    "Number_of_Roster_Slots_Filled": "25",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "5/7"
+  },
+  {
+    "Points": "15",
+    "Team": "St Louis City SC",
+    "Coach": "David Critchley",
+    "Owner": "Carolyn Kindle",
+    "GM": "Lutz Pfannenstiel",
+    "City": "St. Louis, MO",
+    "Number_of_Roster_Slots_Filled": "28",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "8/8"
+  },
+  {
+    "Points": "35",
+    "Team": "Vancouver Whitecaps",
+    "Coach": "Jesper Sorensen",
+    "Owner": "Greg Kerfoot",
+    "GM": "Axel Schuster",
+    "City": "Vancouver, Canada",
+    "Number_of_Roster_Slots_Filled": "25",
+    "Roster_Model": "U22 Intiative",
+    "International_Slots_Filled": "10/8"
+  }
+]
