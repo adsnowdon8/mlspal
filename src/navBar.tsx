@@ -12,17 +12,18 @@ const NavBar = () => {
             Player Table
           </NavLink>
           <NavLink to="/teams" className="hover:underline">
-            Team Table
+            Standing
           </NavLink>
           {/* <NavLink to="/teams" className="hover:underline">
             News
           </NavLink> */}
 
           <NavLink to="/trade" className="hover:underline">
-            Trade
+            Trade Machine
           </NavLink>
         </div>
-        <text className="text-xs"> Data updated as of 5/16/2025</text>
+        {/* <text className="text-xs"> Data updated as of 5/16/2025</text>  */}
+        {/* how to diplay only on data pages */}
         <a
           href="mailto:hi@mlspal.app"
           className="pr-5 className='hover:underline'"

@@ -43,19 +43,31 @@ export const PlayerTable2 = () => {
   const columns = React.useMemo<ColumnDef<Player, any>[]>(
     () => [
       {
-        accessorKey: "First_Name",
-        header: "First Name",
+        accessorKey: "Shirt_Number",
+        header: "Shirt Number",
+        cell: (info) => info.getValue(),
+        enableColumnFilter: false,
+      },
+      {
+        accessorKey: "Name",
+        header: "Name",
         cell: (info) => info.getValue(),
         // enableColumnFilter: false ,
       },
-      {
-        // accessorFn: (row) => row.lastName,
-        accessorKey: "Last_Name",
-        id: "lastName",
-        cell: (info) => info.getValue(),
-        header: () => <span>Last Name</span>,
-        // enableColumnFilter: false,
-      },
+      // {
+      //   accessorKey: "First_Name",
+      //   header: "First Name",
+      //   cell: (info) => info.getValue(),
+      //   // enableColumnFilter: false ,
+      // },
+      // {
+      //   // accessorFn: (row) => row.lastName,
+      //   accessorKey: "Last_Name",
+      //   id: "lastName",
+      //   cell: (info) => info.getValue(),
+      //   header: () => <span>Last Name</span>,
+      //   // enableColumnFilter: false,
+      // },
       {
         accessorKey: "Position",
         header: () => "Position",
@@ -64,15 +76,13 @@ export const PlayerTable2 = () => {
         },
       },
       {
-        accessorKey: "TEAM",
+        accessorKey: "Team",
         header: "Club",
         meta: {
           filterVariant: "club",
         },
         // cell: (info) => info.getValue(),
         cell: (info) => <TeamLogoViewer club={info.getValue()} />,
-        // cell: (info) => <>{info.cell}</>,
-        // cell: <TeamLogoViewer club={info.getValue()} />,
       },
       {
         accessorKey: "Age",
@@ -98,14 +108,14 @@ export const PlayerTable2 = () => {
       //   // },
       // },
 
-      // {
-      //   accessorKey: "Roster_Designation",
-      //   header: "Roster Designation",
-      //   enableColumnFilter: false,
-      //   meta: {
-      //     filterVariant: "rosterDesignation",
-      //   },
-      // },
+      {
+        accessorKey: "Roster_Designation",
+        header: "Roster Designation",
+        enableColumnFilter: false,
+        meta: {
+          filterVariant: "rosterDesignation",
+        },
+      },
       {
         accessorKey: "Nationality",
         header: "Nationality",
@@ -224,9 +234,7 @@ export const PlayerTable2 = () => {
                 className="border-b border-gray-200 hover:bg-gray-50 hover:cursor-pointer"
                 onClick={() => {
                   console.log(row);
-                  navigate(
-                    `/players/${row.original.First_Name.trim()} ${row.original.Last_Name.trim()}`
-                  );
+                  navigate(`/players/${row.original.Name.trim()}`);
                 }}
               >
                 {row.getVisibleCells().map((cell) => {

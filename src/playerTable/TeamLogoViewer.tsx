@@ -20,7 +20,7 @@ export const TeamLogoViewer: React.FC<{ club: string }> = ({ club }) => {
       return "/teamLogos/ner.png";
     } else if (club === "Nashville SC") {
       return "/teamLogos/nsc.png";
-    } else if (club === "New York City FC") {
+    } else if (club === "NYCFC") {
       return "/teamLogos/nycfc.png";
     } else if (club === "NY Red Bulls") {
       return "/teamLogos/nyrb.png";
@@ -63,6 +63,7 @@ export const TeamLogoViewer: React.FC<{ club: string }> = ({ club }) => {
     } else if (club === "St Louis City SC") {
       return "/teamLogos/stl.png";
     } else {
+      console.log(club + " no logo");
       return "/logo512.png";
     }
 

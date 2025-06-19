@@ -2,12 +2,7 @@ import { useCallback, useMemo, useState } from "react";
 import { playersJson } from "../playerTable/Players";
 import { teamsJson } from "../Teams";
 import axios from "axios";
-import {
-  document_prefix_prompt,
-  MLS_TRADE_RULES,
-  server_GEMINI_ENDPOINT,
-  USERNAME,
-} from "../constants";
+import { server_GEMINI_ENDPOINT, USERNAME } from "../constants";
 import { ResponseComponent } from "./ResponseComponent";
 import "./Input.css";
 
@@ -34,12 +29,12 @@ export const InputView: React.FC<{
 
   const playerOptions = useMemo(() => {
     return playersJson
-      .sort((a, b) => a.Last_Name.localeCompare(b.Last_Name))
+      .sort((a, b) => a.Name.localeCompare(b.Name))
       .map(
         (player) => {
           return {
-            label: player.First_Name + " " + player.Last_Name,
-            value: player.First_Name + " " + player.Last_Name,
+            label: player.Name,
+            value: player.Name,
           };
         }
         // <option value={player.First_Name + " " + player.Last_Name}>
@@ -69,11 +64,12 @@ export const InputView: React.FC<{
       setQuestionsAsked((q) => [...q, question]);
       const playerInfo = playersJson.find(
         (player) =>
-          player.First_Name + " " + player.Last_Name === selectedPlayer?.value
+          // player.First_Name + " " + player.Last_Name === selectedPlayer?.value
+          player.Name === selectedPlayer?.value
       );
 
       const playerCurrentClubInfo = teamsJson.find((team) => {
-        return team.Team === playerInfo?.TEAM;
+        return team.Team === playerInfo?.Team;
       });
       const proposedTeamInfo = teamsJson.find(
         (team) => team.Team === selectedTeam?.value
@@ -151,7 +147,7 @@ export const InputView: React.FC<{
         <ResponseComponent response={response} setResponse={setResponse} />
       ) : (
         <div className="h-full flex flex-col items-center justify-center gap-5 pb-40">
-          <h1 className="text-2xl font-bold pt-10">Trade Analyzer</h1>
+          <h1 className="text-2xl font-bold pt-10">Trade Analysis</h1>
           <text className="w-1/2 ">
             Major League Soccer operates under a distinctive set of roster
             rules, salary caps, and player movement mechanisms that make trades
