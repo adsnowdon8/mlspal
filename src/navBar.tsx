@@ -12,7 +12,7 @@ const NavBar = () => {
             Player Table
           </NavLink>
           <NavLink to="/teams" className="hover:underline">
-            Standing
+            Standings
           </NavLink>
           {/* <NavLink to="/teams" className="hover:underline">
             News

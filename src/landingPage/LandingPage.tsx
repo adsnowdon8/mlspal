@@ -1,7 +1,7 @@
 export const LandingPage: React.FC = () => {
   return (
-    <div className="flex w-full h-min items-center justify-center pb-40 pl-10">
-      <div className="w-full">
+    <div className="flex w-full h-min overflow-hidden  items-center justify-center pb-40 pl-10 relative">
+      <div className="w-full h-full flex flex-col justify-center">
         <h1>
           <b>Welcome to MLS PAL</b>, your trusted source for key contract
           information on every MLS player, up and coming young stars in MLS NEXT
