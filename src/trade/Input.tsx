@@ -96,7 +96,6 @@ export const InputView: React.FC<{
         },
       })
         .then((response) => {
-          console.log({ response });
           setLoading(false);
           setResponse(response.data);
           setResponses((r) => [...r, response.data]);

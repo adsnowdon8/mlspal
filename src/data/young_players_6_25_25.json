@@ -1,0 +1,2012 @@
+[
+    {
+        "Name": "Santiago Pita",
+        "Minutes_Played": "7",
+        "Team": "Atlanta United",
+        "DOB": "6/1/2007",
+        "Age": 18,
+        "Position": "Attacking Midfelder",
+        "Nationality": "USA and Venezuela",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Dominik Chong Qui",
+        "Minutes_Played": "679",
+        "Team": "Atlanta United",
+        "DOB": "12/29/2007",
+        "Age": 17,
+        "Position": "Left Back",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Kaiden Moore",
+        "Minutes_Played": "7",
+        "Team": "Atlanta United",
+        "DOB": "11/5/2007",
+        "Age": 17,
+        "Position": "Center Back, Left Back",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Ashton Gordon",
+        "Minutes_Played": "22",
+        "Team": "Atlanta United",
+        "DOB": "4/14/2007",
+        "Age": 18,
+        "Position": "Winger",
+        "Nationality": "USA and Jamaica",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Cooper Sanchez",
+        "Minutes_Played": "708",
+        "Team": "Atlanta United",
+        "DOB": "3/26/2008",
+        "Age": 17,
+        "Position": "Central Midfield",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Gabriel Wesseh",
+        "Minutes_Played": "677",
+        "Team": "Atlanta United",
+        "DOB": "5/6/2008",
+        "Age": 17,
+        "Position": "Attacking Midfielder",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Isiah Vicentti",
+        "Minutes_Played": "13",
+        "Team": "Atlanta United",
+        "DOB": "3/28/2008",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "USA & Puerto Rico",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Braden Dunham",
+        "Minutes_Played": "529",
+        "Team": "Atlanta United",
+        "DOB": "5/10/2007",
+        "Age": 18,
+        "Position": "Center Back",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "David Siberian",
+        "Minutes_Played": "8",
+        "Team": "Atlanta United",
+        "DOB": "11/5/2009",
+        "Age": 15,
+        "Position": "Defensive Midfielder",
+        "Nationality": "USA and El Salvador",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Jonathan Ransom",
+        "Minutes_Played": "270",
+        "Team": "Atlanta United",
+        "DOB": "1/8/2008",
+        "Age": 17,
+        "Position": "Goalkeeper",
+        "Nationality": "USA and Canada",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Ayo Akintobi",
+        "Minutes_Played": "82",
+        "Team": "Atlanta United",
+        "DOB": "8/16/2007",
+        "Age": 17,
+        "Position": "Right Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Adyn Torres",
+        "Minutes_Played": "369",
+        "Team": "Atlanta United",
+        "DOB": "11/13/2007",
+        "Age": 17,
+        "Position": "Defensive Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Ervin Torres",
+        "Minutes_Played": "955",
+        "Team": "Austin FC",
+        "DOB": "11/14/2007",
+        "Age": 17,
+        "Position": "Central Midfield",
+        "Nationality": "USA and Mexico",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Mohammad Badawiya",
+        "Minutes_Played": "218",
+        "Team": "Austin FC",
+        "DOB": "11/14/2007",
+        "Age": 17,
+        "Position": "Attacking Midfielder",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Drake Hadeed",
+        "Minutes_Played": "261",
+        "Team": "Carolina Core",
+        "DOB": "11/21/2007",
+        "Age": 17,
+        "Position": "Attacking Midfielder, Winger",
+        "Nationality": "USA and Antigua",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Patrick Los",
+        "Minutes_Played": "1080",
+        "Team": "Chicago Fire FC 2",
+        "DOB": "8/17/2007",
+        "Age": 17,
+        "Position": "Goalkeeper",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Christopher Cupps",
+        "Minutes_Played": "315",
+        "Team": "Chicago Fire FC 2",
+        "DOB": "5/26/2008",
+        "Age": 17,
+        "Position": "Center Back, Right Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Vitaliy Hlyut",
+        "Minutes_Played": "655",
+        "Team": "Chicago Fire FC 2",
+        "DOB": "4/29/2008",
+        "Age": 17,
+        "Position": " Attacking Midfidler, Winger",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Chase Nagle",
+        "Minutes_Played": "724",
+        "Team": "Chicago Fire FC 2",
+        "DOB": "9/21/2008",
+        "Age": 16,
+        "Position": "Center Back, Center Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Josue Pfrommer",
+        "Minutes_Played": "27",
+        "Team": "Chicago Fire FC 2",
+        "DOB": "7/9/2008",
+        "Age": 16,
+        "Position": "Center Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Emir Herrera",
+        "Minutes_Played": "30",
+        "Team": "Chicago Fire FC 2",
+        "DOB": "8/28/2008",
+        "Age": 16,
+        "Position": "Defensive Midfielder",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Oscar Pineda",
+        "Minutes_Played": "1",
+        "Team": "Chicago Fire FC 2",
+        "DOB": "7/29/2008",
+        "Age": 16,
+        "Position": "Center Midfielder, Center Defensive Midfielder",
+        "Nationality": "USA and Mexico",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Jaden Chan Tack",
+        "Minutes_Played": "436",
+        "Team": "Colorado Rapids 2",
+        "DOB": "12/14/2007",
+        "Age": 17,
+        "Position": "Outside Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Noah Strellenauer",
+        "Minutes_Played": "667",
+        "Team": "Colorado Rapids 2",
+        "DOB": "8/22/2007",
+        "Age": 17,
+        "Position": "Center Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Colton Swan",
+        "Minutes_Played": "764",
+        "Team": "Colorado Rapids 2",
+        "DOB": "5/3/2007",
+        "Age": 18,
+        "Position": "Winger, Striker",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Maxwell Simpson",
+        "Minutes_Played": "19",
+        "Team": "Colorado Rapids 2",
+        "DOB": "5/9/2007",
+        "Age": 18,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Rogelio Garcia",
+        "Minutes_Played": "204",
+        "Team": "Colorado Rapids 2",
+        "DOB": "4/30/2008",
+        "Age": 17,
+        "Position": "Forward, Winger",
+        "Nationality": "USA and Mexico",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Andre Erickson",
+        "Minutes_Played": "90",
+        "Team": "Colorado Rapids 2",
+        "DOB": "1/9/2008",
+        "Age": 17,
+        "Position": "Attacking Midfielder, Outside Back",
+        "Nationality": "USA",
+        "Foot": ""
+    },
+    {
+        "Name": "Landon Strohmeyer",
+        "Minutes_Played": "10",
+        "Team": "Colorado Rapids 2",
+        "DOB": "5/21/2008",
+        "Age": 17,
+        "Position": "Midfielder",
+        "Nationality": "",
+        "Foot": ""
+    },
+    {
+        "Name": "Alexander Gimple",
+        "Minutes_Played": "50",
+        "Team": "Columbus Crew 2",
+        "DOB": "9/30/2008",
+        "Age": 16,
+        "Position": "Forward",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Chase Adams",
+        "Minutes_Played": "586",
+        "Team": "Columbus Crew 2",
+        "DOB": "4/17/2008",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Austin Su",
+        "Minutes_Played": "315",
+        "Team": "Columbus Crew 2",
+        "DOB": "1/5/2008",
+        "Age": 17,
+        "Position": "Central Midfield",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Shalom Adja",
+        "Minutes_Played": "21",
+        "Team": "Columbus Crew 2",
+        "DOB": "8/6/2007",
+        "Age": 17,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Isaac Alexander Tortola",
+        "Minutes_Played": "79",
+        "Team": "Columbus Crew 2",
+        "DOB": "2/21/2008",
+        "Age": 17,
+        "Position": "Attacking Midfielder, Midfielder",
+        "Nationality": "Canada and USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Gianmarco Di Noto",
+        "Minutes_Played": "509",
+        "Team": "Columbus Crew 2",
+        "DOB": "3/27/2009",
+        "Age": 16,
+        "Position": "Center Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Tristan Brown",
+        "Minutes_Played": "619",
+        "Team": "Columbus Crew 2",
+        "DOB": "10/17/2007",
+        "Age": 17,
+        "Position": "Left Back, Wing Back",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Christian Ortiz",
+        "Minutes_Played": "521",
+        "Team": "Columbus Crew 2",
+        "DOB": "4/23/2007",
+        "Age": 18,
+        "Position": "Forward",
+        "Nationality": "USA and Dominican Republic",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Artem Grinblat",
+        "Minutes_Played": "60",
+        "Team": "Columbus Crew 2",
+        "DOB": "11/23/2007",
+        "Age": 17,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": ""
+    },
+    {
+        "Name": "Apolo Marinch",
+        "Minutes_Played": "31",
+        "Team": "Columbus Crew 2",
+        "DOB": "4/28/2010",
+        "Age": 15,
+        "Position": "Forward",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Prince Forfor",
+        "Minutes_Played": "89",
+        "Team": "Columbus Crew 2",
+        "DOB": "3/14/2009",
+        "Age": 16,
+        "Position": "Left Back, Wing Back",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Wyatt Holt",
+        "Minutes_Played": "990",
+        "Team": "Crown Legacy",
+        "DOB": "5/29/2009",
+        "Age": 16,
+        "Position": "Center Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Rocket Ritarita",
+        "Minutes_Played": "414",
+        "Team": "Crown Legacy",
+        "DOB": "4/16/2007",
+        "Age": 18,
+        "Position": "Forward, Attacking Midfielder",
+        "Nationality": "USA and Philippines",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Adrian Mendoza",
+        "Minutes_Played": "17",
+        "Team": "Corwn Legacy",
+        "DOB": "8/21/2007",
+        "Age": 17,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Nimfasha Berchimas",
+        "Minutes_Played": "15",
+        "Team": "Crown Legacy",
+        "DOB": "2/22/2008",
+        "Age": 17,
+        "Position": "Left Winger",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Isais Elizalde",
+        "Minutes_Played": "24",
+        "Team": "Crown Legacy",
+        "DOB": "6/21/2008",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Luke Munson",
+        "Minutes_Played": "113",
+        "Team": "Crown Legacy",
+        "DOB": "7/25/2007",
+        "Age": 17,
+        "Position": "Right Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Andrei Chirila",
+        "Minutes_Played": "1124",
+        "Team": "FC Cincinnati",
+        "DOB": "8/15/2008",
+        "Age": 16,
+        "Position": "Center Back, Left Back",
+        "Nationality": "USA and Romania",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Stiven Jimenez",
+        "Minutes_Played": "707",
+        "Team": "FC Cincinnati",
+        "DOB": "7/24/2007",
+        "Age": 17,
+        "Position": "Central Midfield",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "William Kuisel",
+        "Minutes_Played": "321",
+        "Team": "FC Cincinnati",
+        "DOB": "1/16/2008",
+        "Age": 17,
+        "Position": "Left Back, Wing Back",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Ademar Chavez",
+        "Minutes_Played": "139",
+        "Team": "FC Cincinnati",
+        "DOB": "1/12/2009",
+        "Age": 16,
+        "Position": "Attacking Midfielder",
+        "Nationality": "USA and Mexico",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Carson Locker",
+        "Minutes_Played": "510",
+        "Team": "FC Cincinnati",
+        "DOB": "10/8/2007",
+        "Age": 17,
+        "Position": "Central Midfield",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Ali Sakr",
+        "Minutes_Played": "1",
+        "Team": "FC Cincinnati",
+        "DOB": "3/10/2010",
+        "Age": 15,
+        "Position": "Attacking Midfielder",
+        "Nationality": "USA",
+        "Foot": "Both"
+    },
+    {
+        "Name": "Jaylen Lester",
+        "Minutes_Played": "45",
+        "Team": "FC Cincinnati",
+        "DOB": "4/30/2008",
+        "Age": 17,
+        "Position": "Winger",
+        "Nationality": "USA and Jamaica",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Brandon Kristen",
+        "Minutes_Played": "8",
+        "Team": "FC Cincinnati",
+        "DOB": "12/13/2007",
+        "Age": 17,
+        "Position": "Winger",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "David Garcia",
+        "Minutes_Played": "211",
+        "Team": "Houston Dynamo 2",
+        "DOB": "4/15/2008",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "Venezuela",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Daniel Barett",
+        "Minutes_Played": "992",
+        "Team": "Houston Dynamo 2",
+        "DOB": "4/20/2009",
+        "Age": 16,
+        "Position": "Center Back, Outside Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Isaac Mwakutuya",
+        "Minutes_Played": "770",
+        "Team": "Houston Dynamo 2",
+        "DOB": "9/10/2007",
+        "Age": 17,
+        "Position": "Center Back",
+        "Nationality": "USA and Zimbabwe",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Micah Harris",
+        "Minutes_Played": "465",
+        "Team": "Houston Dynamo 2",
+        "DOB": "2/7/2008",
+        "Age": 17,
+        "Position": "Center Back, Left Back",
+        "Nationality": "USA and Dominican Republic",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Mattheo Dimareli",
+        "Minutes_Played": "605",
+        "Team": "Houston Dynamo 2",
+        "DOB": "5/28/2009",
+        "Age": 16,
+        "Position": "Winger, Wing Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Sebastian Rodriguez",
+        "Minutes_Played": "1080",
+        "Team": "Houston Dynamo 2",
+        "DOB": "9/13/2007",
+        "Age": 17,
+        "Position": "Central Midfielder ",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Lukas Bruegmann",
+        "Minutes_Played": "460",
+        "Team": "Houston Dynamo 2",
+        "DOB": "4/22/2009",
+        "Age": 16,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Fadel Kone",
+        "Minutes_Played": "119",
+        "Team": "Houston Dynamo 2",
+        "DOB": "5/25/2007",
+        "Age": 18,
+        "Position": "Forward",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Gavin Wolff",
+        "Minutes_Played": "614",
+        "Team": "Houston Dynamo 2",
+        "DOB": "8/27/2008",
+        "Age": 16,
+        "Position": "Left Back, Center Back",
+        "Nationality": "USA and Philippines ",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Noah Betancourt",
+        "Minutes_Played": "792",
+        "Team": "Houston Dynamo 2",
+        "DOB": "4/13/2007",
+        "Age": 18,
+        "Position": "Center Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Omar Bolanos",
+        "Minutes_Played": "167",
+        "Team": "Houston Dynamo 2",
+        "DOB": "1/13/2008",
+        "Age": 17,
+        "Position": "Midfielder and Defender",
+        "Nationality": "USA and Mexico",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Jayden Puna",
+        "Minutes_Played": "400",
+        "Team": "Houston Dynamo 2",
+        "DOB": "2/29/2008",
+        "Age": 17,
+        "Position": "Center Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Omar Flores",
+        "Minutes_Played": "119",
+        "Team": "Houston Dynamo 2",
+        "DOB": "4/3/2008",
+        "Age": 17,
+        "Position": "Right Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Faraji Ramani",
+        "Minutes_Played": "23",
+        "Team": "Houston Dynamo 2",
+        "DOB": "2/28/2008",
+        "Age": 17,
+        "Position": "Midfielder ",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Myles Gardner",
+        "Minutes_Played": "10",
+        "Team": "Houston Dynamo 2",
+        "DOB": "4/15/2009",
+        "Age": 16,
+        "Position": "Winger",
+        "Nationality": "USA and Jamaica",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Sebastiao Nzita",
+        "Minutes_Played": "10",
+        "Team": "Houston Dynamo 2",
+        "DOB": "10/10/2010",
+        "Age": 14,
+        "Position": "Winger",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Roman Kerimov",
+        "Minutes_Played": "180",
+        "Team": "Houston Dynamo 2",
+        "DOB": "2/15/2008",
+        "Age": 17,
+        "Position": "Goalkeeper",
+        "Nationality": "USA and Russia",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Lionel Gitau",
+        "Minutes_Played": "308",
+        "Team": "Houston Dynamo 2",
+        "DOB": "3/1/2008",
+        "Age": 17,
+        "Position": "Attacking Midfielder ",
+        "Nationality": "USA and Kenya",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Gabriel Alonso",
+        "Minutes_Played": "155",
+        "Team": "Hunstville City FC",
+        "DOB": "10/20/2008",
+        "Age": 16,
+        "Position": "Outside Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Ammar Delic",
+        "Minutes_Played": "90",
+        "Team": "Hunstville City FC",
+        "DOB": "6/21/2007",
+        "Age": 18,
+        "Position": "Goalkeeper",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Chris Applewhite",
+        "Minutes_Played": "242",
+        "Team": "Hunstville City FC",
+        "DOB": "8/23/2007",
+        "Age": 17,
+        "Position": "Center Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Matias Marin",
+        "Minutes_Played": "540",
+        "Team": "Inter Miami 2",
+        "DOB": "10/7/2007",
+        "Age": 17,
+        "Position": "Goalkeeper",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Daniel Pinter",
+        "Minutes_Played": "424",
+        "Team": "Inter Miami 2",
+        "DOB": "6/6/2007",
+        "Age": 18,
+        "Position": "Winger, Striker",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Mateo Saja",
+        "Minutes_Played": "941",
+        "Team": "Inter Miami 2",
+        "DOB": "7/6/2007",
+        "Age": 17,
+        "Position": "Center Forward",
+        "Nationality": "Argentina",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Daniel Sumalla",
+        "Minutes_Played": "209",
+        "Team": "Inter Miami 2",
+        "DOB": "6/25/2007",
+        "Age": 18,
+        "Position": "Center Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Jude Terry",
+        "Minutes_Played": "586",
+        "Team": "LAFC 2",
+        "DOB": "10/8/2008",
+        "Age": 16,
+        "Position": "Central Midfielder ",
+        "Nationality": "USA, Argentina, Mexico",
+        "Foot": "Right"
+    },
+    {
+        "Name": "James Lane",
+        "Minutes_Played": "11",
+        "Team": "LAFC 2",
+        "DOB": "11/9/2007",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "DeCarlo Guerra",
+        "Minutes_Played": "836",
+        "Team": "LAFC 2",
+        "DOB": "2/1/2008",
+        "Age": 17,
+        "Position": "Central Midfielder ",
+        "Nationality": "USA and Guatemala",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Gavin Zambrano",
+        "Minutes_Played": "203",
+        "Team": "LAFC 2",
+        "DOB": "1/23/2008",
+        "Age": 17,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Marius Aiyenero",
+        "Minutes_Played": "237",
+        "Team": "LAFC 2",
+        "DOB": "5/23/2008",
+        "Age": 17,
+        "Position": "Center Forward",
+        "Nationality": "Canada",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Dempsey Resich",
+        "Minutes_Played": "46",
+        "Team": "LAFC 2",
+        "DOB": "10/22/2007",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Matias Wanchope",
+        "Minutes_Played": "74",
+        "Team": "LAFC 2",
+        "DOB": "8/31/2007",
+        "Age": 17,
+        "Position": "Central Midfield",
+        "Nationality": "Costa Rica",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Adrian Sanders",
+        "Minutes_Played": "236",
+        "Team": "LAFC 2",
+        "DOB": "9/17/2008",
+        "Age": 16,
+        "Position": "Center Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Ethan Scally",
+        "Minutes_Played": "180",
+        "Team": "LAFC 2",
+        "DOB": "7/8/2008",
+        "Age": 16,
+        "Position": "Goalkeeper",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Charlie Rosenthal",
+        "Minutes_Played": "305",
+        "Team": "LAFC 2",
+        "DOB": "4/15/2007",
+        "Age": 18,
+        "Position": "Attacking Midfielder, Forward",
+        "Nationality": "USA and England",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Kayne Rizvanovich",
+        "Minutes_Played": "270",
+        "Team": "Minnesota United 2",
+        "DOB": "10/26/2007",
+        "Age": 17,
+        "Position": "Goalkeeper",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "John Farris",
+        "Minutes_Played": "707",
+        "Team": "Minnesota United 2",
+        "DOB": "9/9/2007",
+        "Age": 17,
+        "Position": "Midfelder, Defender",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Issa Saidi",
+        "Minutes_Played": "219",
+        "Team": "Minnesota United 2",
+        "DOB": "6/20/2008",
+        "Age": 17,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Alisa Randell",
+        "Minutes_Played": "461",
+        "Team": "Minnesota United 2",
+        "DOB": "8/25/2007",
+        "Age": 17,
+        "Position": "Striker, Winger",
+        "Nationality": "USA and Liberia",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Braden Schumacher",
+        "Minutes_Played": "75",
+        "Team": "Minnesota United 2",
+        "DOB": "3/21/2008",
+        "Age": 17,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": ""
+    },
+    {
+        "Name": "Kai Zeruhn",
+        "Minutes_Played": "180",
+        "Team": "Minnesota United 2",
+        "DOB": "10/12/2007",
+        "Age": 17,
+        "Position": "Goalkeeper",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Damario McIntosh",
+        "Minutes_Played": "678",
+        "Team": "NE Revolution 2",
+        "DOB": "8/17/2007",
+        "Age": 17,
+        "Position": "Right Back",
+        "Nationality": "USA and Jamaica",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Cristiano Oliveira",
+        "Minutes_Played": "634",
+        "Team": "NE Revolution 2",
+        "DOB": "3/20/2008",
+        "Age": 17,
+        "Position": "Central Midfielder ",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Cristiano Carlos",
+        "Minutes_Played": "145",
+        "Team": "NE Revolution 2",
+        "DOB": "1/1/2008",
+        "Age": 17,
+        "Position": "Left Winger, Forward",
+        "Nationality": "USA and Portugal",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Robert Nichols",
+        "Minutes_Played": "63",
+        "Team": "NE Revolution 2",
+        "DOB": "10/5/2007",
+        "Age": 17,
+        "Position": "Center Forward",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Grant Emerhi",
+        "Minutes_Played": "104",
+        "Team": "NE Revolution 2",
+        "DOB": "1/25/2008",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "USA and Lithuania",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Sheridan McNish",
+        "Minutes_Played": "3",
+        "Team": "NE Revolution 2",
+        "DOB": "6/25/2008",
+        "Age": 17,
+        "Position": "Center Back, Outside Back",
+        "Nationality": "USA and T&T",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Bryan Norena",
+        "Minutes_Played": "31",
+        "Team": "NE Revolution 2",
+        "DOB": "1/17/2008",
+        "Age": 17,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Edwin Flores",
+        "Minutes_Played": "31",
+        "Team": "NE Revolution 2",
+        "DOB": "10/19/2007",
+        "Age": 17,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Enzo Goncalves",
+        "Minutes_Played": "19",
+        "Team": "NE Revolution 2",
+        "DOB": "",
+        "Age": 0,
+        "Position": "Forward",
+        "Nationality": "USA and Portugal",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Levi Katsell",
+        "Minutes_Played": "59",
+        "Team": "NE Revolution 2",
+        "DOB": "12/16/2009",
+        "Age": 15,
+        "Position": "Attacking Midfielder",
+        "Nationality": "Czech Republic",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Judah Siqueira",
+        "Minutes_Played": "203",
+        "Team": "NE Revolution 2",
+        "DOB": "3/27/2009",
+        "Age": 16,
+        "Position": "Central Midfield",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Javaun Mussenden",
+        "Minutes_Played": "542",
+        "Team": "NE Revolution 2",
+        "DOB": "9/5/2007",
+        "Age": 17,
+        "Position": "Central Midfielder ",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Josh Macedo",
+        "Minutes_Played": "180",
+        "Team": "NE Revolution 2",
+        "DOB": "",
+        "Age": 0,
+        "Position": "Right Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Ivan Villalobos",
+        "Minutes_Played": "24",
+        "Team": "NE Revolution 2",
+        "DOB": "5/13/2009",
+        "Age": 16,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Eli Ackerman",
+        "Minutes_Played": "74",
+        "Team": "NE Revolution 2",
+        "DOB": "1/9/2008",
+        "Age": 17,
+        "Position": "Right Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Landon Hickman",
+        "Minutes_Played": "304",
+        "Team": "North Texas",
+        "DOB": "7/12/2007",
+        "Age": 17,
+        "Position": "Midfielder, Outside Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Isaiah Kaakoush",
+        "Minutes_Played": "466",
+        "Team": "North Texas",
+        "DOB": "1/20/2008",
+        "Age": 17,
+        "Position": "Center Back, Defensive Midfilder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Joshua Torquato",
+        "Minutes_Played": "1259",
+        "Team": "North Texas",
+        "DOB": "7/24/2007",
+        "Age": 17,
+        "Position": "Outside Back",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Nicol\u00e1s Montoya",
+        "Minutes_Played": "450",
+        "Team": "North Texas",
+        "DOB": "7/4/2007",
+        "Age": 17,
+        "Position": "Goalkeeper",
+        "Nationality": "Colombia",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Christopher Salazar",
+        "Minutes_Played": "134",
+        "Team": "North Texas",
+        "DOB": "9/24/2007",
+        "Age": 17,
+        "Position": "Forward, Winger",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Leonardo Orejarena",
+        "Minutes_Played": "86",
+        "Team": "North Texas",
+        "DOB": "11/10/2007",
+        "Age": 17,
+        "Position": "Attacking Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Jaidyn Contreras",
+        "Minutes_Played": "592",
+        "Team": "North Texas",
+        "DOB": "9/26/2007",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Aidan Stokes",
+        "Minutes_Played": "1115",
+        "Team": "NYRB2",
+        "DOB": "1/14/2008",
+        "Age": 17,
+        "Position": "Goalkeeper",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Matthew Dos Santos",
+        "Minutes_Played": "878",
+        "Team": "NYRB2",
+        "DOB": "6/5/2008",
+        "Age": 17,
+        "Position": "Left Back, Wing Back",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Christian Gallagher",
+        "Minutes_Played": "207",
+        "Team": "NYRB2",
+        "DOB": "11/5/2007",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Tanner Rosborough",
+        "Minutes_Played": "814",
+        "Team": "NYRB2",
+        "DOB": "3/21/2008",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Dennis Nelich",
+        "Minutes_Played": "30",
+        "Team": "NYRB2",
+        "DOB": "3/3/2008",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Adri Mehmeti",
+        "Minutes_Played": "1080",
+        "Team": "NYRB2",
+        "DOB": "4/6/2009",
+        "Age": 16,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Julian Hall",
+        "Minutes_Played": "269",
+        "Team": "NYRB2",
+        "DOB": "3/24/2008",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Peter Molinari",
+        "Minutes_Played": "1070",
+        "Team": "NYCFC2",
+        "DOB": "1/28/2009",
+        "Age": 16,
+        "Position": "Central Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Julien Lacher",
+        "Minutes_Played": "1215",
+        "Team": "NYCFC2",
+        "DOB": "10/1/2007",
+        "Age": 17,
+        "Position": "Winger",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Jacob Arroyave",
+        "Minutes_Played": "156",
+        "Team": "NYCFC2",
+        "DOB": "11/12/2007",
+        "Age": 17,
+        "Position": "Attacking Midfielder, Winger",
+        "Nationality": "USA and Colombia",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Zidane Yanez",
+        "Minutes_Played": "240",
+        "Team": "NYCFC2",
+        "DOB": "1/26/2008",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "USA and Chile",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Seymour Garfield-Reid",
+        "Minutes_Played": "864",
+        "Team": "NYCFC2",
+        "DOB": "3/4/2008",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "Jamaica and USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Luka Sunjic",
+        "Minutes_Played": "287",
+        "Team": "NYCFC2",
+        "DOB": "3/28/2009",
+        "Age": 16,
+        "Position": "Central Midfield",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Evan Lim",
+        "Minutes_Played": "766",
+        "Team": "NYCFC2",
+        "DOB": "4/5/2008",
+        "Age": 17,
+        "Position": "Central Midfield",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Maximo Carrizo",
+        "Minutes_Played": "514",
+        "Team": "NYCFC2",
+        "DOB": "2/28/2008",
+        "Age": 17,
+        "Position": "Attacking Midfielder",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Dylan Thomas",
+        "Minutes_Played": "13",
+        "Team": "NYCFC2",
+        "DOB": "2/22/2008",
+        "Age": 17,
+        "Position": "Winger",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Dylan Judelson",
+        "Minutes_Played": "464",
+        "Team": "Orlando City B",
+        "DOB": "6/5/2008",
+        "Age": 17,
+        "Position": "Central Midfield",
+        "Nationality": "USA and Canada",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Justin Ellis",
+        "Minutes_Played": "666",
+        "Team": "Orlando City B",
+        "DOB": "5/14/2007",
+        "Age": 18,
+        "Position": "Forward",
+        "Nationality": "USA",
+        "Foot": "Both"
+    },
+    {
+        "Name": "Clovis Archange",
+        "Minutes_Played": "10",
+        "Team": "Orlando City B",
+        "DOB": "1/7/2008",
+        "Age": 17,
+        "Position": "Center Back, Outside Back",
+        "Nationality": "Canada",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Bernardo Rhein Goncalves",
+        "Minutes_Played": "279",
+        "Team": "Orlando City B",
+        "DOB": "9/21/2007",
+        "Age": 17,
+        "Position": "Winger",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Gustavo Carballo",
+        "Minutes_Played": "400",
+        "Team": "Orlando City B",
+        "DOB": "8/29/2008",
+        "Age": 16,
+        "Position": "Winger",
+        "Nationality": "Venezuela",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Justin Hylton",
+        "Minutes_Played": "34",
+        "Team": "Orlando City B",
+        "DOB": "12/4/2007",
+        "Age": 17,
+        "Position": "Attacking Midfielder",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Niel Pierre",
+        "Minutes_Played": "580",
+        "Team": "Philadelphia Union 2",
+        "DOB": "10/19/2007",
+        "Age": 17,
+        "Position": "Center Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Kellan LeBlanc",
+        "Minutes_Played": "299",
+        "Team": "Philadelphia Union 2",
+        "DOB": "3/17/2008",
+        "Age": 17,
+        "Position": "Attacking Midfielder",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Jordan Griffin",
+        "Minutes_Played": "198",
+        "Team": "Philadelphia Union 2",
+        "DOB": "10/25/2008",
+        "Age": 16,
+        "Position": "Forward",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Malik Kajupovic",
+        "Minutes_Played": "19",
+        "Team": "Philadelphia Union 2",
+        "DOB": "6/24/2009",
+        "Age": 16,
+        "Position": "Forward",
+        "Nationality": "USA and Bosnia",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Jamir Johnson",
+        "Minutes_Played": "54",
+        "Team": "Philadelphia Union 2",
+        "DOB": "7/6/2008",
+        "Age": 16,
+        "Position": "Outside Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Ricardo Bautista",
+        "Minutes_Played": "58",
+        "Team": "Portland Timbers 2",
+        "DOB": "1/1/2008",
+        "Age": 17,
+        "Position": "Outside Back",
+        "Nationality": "USA and Mexico",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Eric Izoita",
+        "Minutes_Played": "504",
+        "Team": "Portland Timbers 2",
+        "DOB": "9/8/2007",
+        "Age": 17,
+        "Position": "Central Midfielder",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Daniel Nunez",
+        "Minutes_Played": "791",
+        "Team": "Portland Timbers 2",
+        "DOB": "12/4/2008",
+        "Age": 16,
+        "Position": "Attacking Midfielder",
+        "Nationality": "USA and Mexico",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Max Eisenberg",
+        "Minutes_Played": "296",
+        "Team": "Portland Timbers 2",
+        "DOB": "12/6/2007",
+        "Age": 17,
+        "Position": "Winger, Forward",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Bryce Vanvoorhis",
+        "Minutes_Played": "236",
+        "Team": "Portland Timbers 2",
+        "DOB": "6/8/2008",
+        "Age": 17,
+        "Position": "Central Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Andrew Krapf",
+        "Minutes_Played": "2",
+        "Team": "Portland Timbers 2",
+        "DOB": "12/3/2008",
+        "Age": 16,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Jacob Izoita",
+        "Minutes_Played": "9",
+        "Team": "Portland Timbers 2",
+        "DOB": "9/8/2007",
+        "Age": 17,
+        "Position": "Winger",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Hudson Tate",
+        "Minutes_Played": "15",
+        "Team": "Portland Timbers 2",
+        "DOB": "7/22/2007",
+        "Age": 17,
+        "Position": "Midfielder, Winger",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Diego Rocio",
+        "Minutes_Played": "61",
+        "Team": "Real Monarchs",
+        "DOB": "9/5/2007",
+        "Age": 17,
+        "Position": "Forward, Winger",
+        "Nationality": "USA and Mexico",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Aiden Hezarkhani",
+        "Minutes_Played": "585",
+        "Team": "Real Monarchs",
+        "DOB": "6/28/2007",
+        "Age": 17,
+        "Position": "Winger, Forward",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Omar Marquez",
+        "Minutes_Played": "459",
+        "Team": "Real Monarchs",
+        "DOB": "2/21/2008",
+        "Age": 17,
+        "Position": "Attacking Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Chase Duke",
+        "Minutes_Played": "29",
+        "Team": "Real Monarchs",
+        "DOB": "1/11/2008",
+        "Age": 17,
+        "Position": "Forward, Winger",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Owen Anderson",
+        "Minutes_Played": "912",
+        "Team": "Real Monarchs",
+        "DOB": "6/6/2007",
+        "Age": 18,
+        "Position": "Attacking Midfielder, Winger",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Dominic Berrios",
+        "Minutes_Played": "106",
+        "Team": "Real Monarchs",
+        "DOB": "06/01/2007",
+        "Age": 18,
+        "Position": "Defensive Midfielder",
+        "Nationality": "USA and Mexico",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Axel Kei",
+        "Minutes_Played": "57",
+        "Team": "Real Monarchs",
+        "DOB": "12/30/2007",
+        "Age": 17,
+        "Position": "Forward",
+        "Nationality": "Ivory Coast",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Lucas Moisa",
+        "Minutes_Played": "180",
+        "Team": "Real Monarchs",
+        "DOB": "4/20/2008",
+        "Age": 17,
+        "Position": "Central Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Antonio Riquelme",
+        "Minutes_Played": "61",
+        "Team": "Real Monarchs",
+        "DOB": "8/8/2008",
+        "Age": 16,
+        "Position": "Attacking Midfielder",
+        "Nationality": "USA and Chile",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Jack Kortkamp",
+        "Minutes_Played": "270",
+        "Team": "SKC 2",
+        "DOB": "1/28/2008",
+        "Age": 17,
+        "Position": "Goalkeeper",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Ian James",
+        "Minutes_Played": "270",
+        "Team": "SKC 2",
+        "DOB": "7/6/2008",
+        "Age": 16,
+        "Position": "Right Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Carter Derksen",
+        "Minutes_Played": "172",
+        "Team": "SKC 2",
+        "DOB": "8/2/2007",
+        "Age": 17,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Tyson Pearce",
+        "Minutes_Played": "1065",
+        "Team": "St Louis City 2",
+        "DOB": "8/12/2007",
+        "Age": 17,
+        "Position": "Right Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Emiliano Chavez",
+        "Minutes_Played": "14",
+        "Team": "St Louis City 2",
+        "DOB": "9/14/2008",
+        "Age": 16,
+        "Position": "Left Back",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Lorenzo Cornelius",
+        "Minutes_Played": "135",
+        "Team": "St Louis City 2",
+        "DOB": "1/28/2008",
+        "Age": 17,
+        "Position": "Attacking Midfielder, Winger",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Ryan Dugan",
+        "Minutes_Played": "302",
+        "Team": "St Louis City 2",
+        "DOB": "4/29/2007",
+        "Age": 18,
+        "Position": "Attacking Midfielder, Forward",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Sebastian Gomez",
+        "Minutes_Played": "866",
+        "Team": "Tacoma Defiance",
+        "DOB": "5/21/2008",
+        "Age": 17,
+        "Position": "Attacking Midfielder",
+        "Nationality": "USA and Canada and Nicaragua",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Omar Said Hassan",
+        "Minutes_Played": "27",
+        "Team": "Tacoma Defiance",
+        "DOB": "3/24/2009",
+        "Age": 16,
+        "Position": "Winger, Forward",
+        "Nationality": "USA and Somalia",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Edson Carli",
+        "Minutes_Played": "504",
+        "Team": "Tacoma Defiance",
+        "DOB": "8/23/2007",
+        "Age": 17,
+        "Position": "Defensive Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Mohammed Shour",
+        "Minutes_Played": "270",
+        "Team": "Tacoma Defiance",
+        "DOB": "9/12/2007",
+        "Age": 17,
+        "Position": "Goalkeeper",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Gallatin Sandnes",
+        "Minutes_Played": "254",
+        "Team": "Tacoma Defiance",
+        "DOB": "6/3/2008",
+        "Age": 17,
+        "Position": "Center Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Leonardo Flores Gonzalez",
+        "Minutes_Played": "27",
+        "Team": "Tacoma Defiance",
+        "DOB": "4/15/2008",
+        "Age": 17,
+        "Position": "Winger",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Mitchell Emert",
+        "Minutes_Played": "27",
+        "Team": "Tacoma Defiance",
+        "DOB": "5/12/2008",
+        "Age": 17,
+        "Position": "Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Richard Chukwu",
+        "Minutes_Played": "470",
+        "Team": "Toronto FC 2",
+        "DOB": "2/25/2008",
+        "Age": 17,
+        "Position": "Center Back, Left Back",
+        "Nationality": "Canada",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Joshua Nugent",
+        "Minutes_Played": "323",
+        "Team": "Toronto FC 2",
+        "DOB": "5/6/2007",
+        "Age": 18,
+        "Position": "Winger, Forward",
+        "Nationality": "Canada",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Stefan Kapor",
+        "Minutes_Played": "265",
+        "Team": "Toronto FC 2",
+        "DOB": "4/4/2009",
+        "Age": 16,
+        "Position": "Center Back, Left Back",
+        "Nationality": "Canada",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Jahmarie Nolan",
+        "Minutes_Played": "418",
+        "Team": "Toronto FC 2",
+        "DOB": "11/11/2009",
+        "Age": 15,
+        "Position": "Forward, Attacking Midfielder",
+        "Nationality": "Jamaica",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Timothy Fortier",
+        "Minutes_Played": "135",
+        "Team": "Toronto FC 2",
+        "DOB": "12/22/2008",
+        "Age": 16,
+        "Position": "Attacking Midfielder",
+        "Nationality": "Canada",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Antone Bossenberry",
+        "Minutes_Played": "376",
+        "Team": "Toronto FC 2",
+        "DOB": "8/14/2008",
+        "Age": 16,
+        "Position": "Attacking Midfielder",
+        "Nationality": "Canada",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Rohan Rajagopal",
+        "Minutes_Played": "696",
+        "Team": "The Town FC",
+        "DOB": "6/12/2007",
+        "Age": 18,
+        "Position": "Defensive Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Kaedren Spivey",
+        "Minutes_Played": "181",
+        "Team": "The Town FC",
+        "DOB": "5/28/2009",
+        "Age": 16,
+        "Position": "Central Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Scott Chavira",
+        "Minutes_Played": "15",
+        "Team": "The Town FC",
+        "DOB": "9/30/2007",
+        "Age": 17,
+        "Position": "Center Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Chance Cowell",
+        "Minutes_Played": "453",
+        "Team": "The Town FC",
+        "DOB": "7/5/2008",
+        "Age": 16,
+        "Position": "Winger",
+        "Nationality": "USA and Mexico",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Tomo Allen",
+        "Minutes_Played": "147",
+        "Team": "The Town FC",
+        "DOB": "7/3/2007",
+        "Age": 17,
+        "Position": "Attacking Midfielder, Forward",
+        "Nationality": "USA and Japan",
+        "Foot": "Both"
+    },
+    {
+        "Name": "Harbor Miller",
+        "Minutes_Played": "720",
+        "Team": "Ventura County",
+        "DOB": "6/21/2007",
+        "Age": 18,
+        "Position": "Outside Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Mateo Tsakiris",
+        "Minutes_Played": "360",
+        "Team": "Ventura County",
+        "DOB": "3/5/2008",
+        "Age": 17,
+        "Position": "Midfielder, Outside Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Dylan Vanney",
+        "Minutes_Played": "1023",
+        "Team": "Ventura County",
+        "DOB": "11/27/2007",
+        "Age": 17,
+        "Position": "Attacking Midfielder",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Gustavo Gonzalez",
+        "Minutes_Played": "3",
+        "Team": "Ventura County",
+        "DOB": "6/24/2007",
+        "Age": 18,
+        "Position": "Center Back",
+        "Nationality": "USA",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Jose Magana",
+        "Minutes_Played": "843",
+        "Team": "Ventura County",
+        "DOB": "7/1/2007",
+        "Age": 17,
+        "Position": "Center Back, Outside Back",
+        "Nationality": "USA and Mexico",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Eric Preston",
+        "Minutes_Played": "45",
+        "Team": "Ventura County",
+        "DOB": "1/31/2008",
+        "Age": 17,
+        "Position": "Outside Back",
+        "Nationality": "USA",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Vicente Garcia",
+        "Minutes_Played": "97",
+        "Team": "Ventura County",
+        "DOB": "6/25/2010",
+        "Age": 15,
+        "Position": "Central Midfield",
+        "Nationality": "USA and Mexico",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Mateo Clark",
+        "Minutes_Played": "880",
+        "Team": "Vancouver Whitecaps 2",
+        "DOB": "4/25/2007",
+        "Age": 18,
+        "Position": "Attacking Midfielder",
+        "Nationality": "USA & Nicaragua",
+        "Foot": "Right"
+    },
+    {
+        "Name": "John Selemani",
+        "Minutes_Played": "923",
+        "Team": "Vancouver Whitecaps 2",
+        "DOB": "3/16/2008",
+        "Age": 17,
+        "Position": "Winger",
+        "Nationality": "Canada",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Sahil Deo",
+        "Minutes_Played": "65",
+        "Team": "Vancouver Whitecaps 2",
+        "DOB": "4/7/2008",
+        "Age": 17,
+        "Position": "Center Back, Left Back",
+        "Nationality": "Canada",
+        "Foot": "Left"
+    },
+    {
+        "Name": "Carson Rassak",
+        "Minutes_Played": "90",
+        "Team": "Vancouver Whitecaps 2",
+        "DOB": "",
+        "Age": 0,
+        "Position": "",
+        "Nationality": "",
+        "Foot": ""
+    },
+    {
+        "Name": "Lucas Chen",
+        "Minutes_Played": "321",
+        "Team": "Vancouver Whitecaps 2",
+        "DOB": "11/5/2007",
+        "Age": 17,
+        "Position": "Cemter Back",
+        "Nationality": "Canada",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Yuma Tsuji",
+        "Minutes_Played": "672",
+        "Team": "Vancouver Whitecaps 2",
+        "DOB": "8/7/2008",
+        "Age": 16,
+        "Position": "Attacking Midfielder",
+        "Nationality": "Canada and Japan",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Rayan Elloumi",
+        "Minutes_Played": "315",
+        "Team": "Vancouver Whitecaps 2",
+        "DOB": "9/17/2007",
+        "Age": 17,
+        "Position": "Attacking Midfielder, Forward",
+        "Nationality": "Canada",
+        "Foot": "Right"
+    },
+    {
+        "Name": "Ben Nash",
+        "Minutes_Played": "17",
+        "Team": "Vancouver Whitecaps 2",
+        "DOB": "n/a",
+        "Age": -1,
+        "Position": "",
+        "Nationality": "",
+        "Foot": ""
+    }
+]
