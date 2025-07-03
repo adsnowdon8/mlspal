@@ -24,11 +24,12 @@ const fetchPlayerDetails = (playerId: string | undefined) => {
 
 export const PlayerPage = () => {
   const { playerId } = useParams();
+  //  make work for young players too?
+  // dont make work for young players
   console.log("Player ID:", playerId);
 
   // Fetch player details using playerId if needed
   const playerDetails = fetchPlayerDetails(playerId);
-  console.log("Player Details:", playerDetails);
 
   return (
     <div className="flex flex-col items-center p-5 text-gray-800">

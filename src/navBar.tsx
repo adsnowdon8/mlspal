@@ -8,7 +8,13 @@ const NavBar = () => {
       <div className="flex bg-gray-200 items-center justify-between">
         <div className="flex gap-3 p-5 items-center">
           <NavLink className="pr-8 pl-5" to="/">
-            <h1 className="font-bold  text-xl hover:underline"> MLS Pal</h1>
+            <h1
+              className="font-black  text-xl hover:underline italic"
+              // style={{ fontFamily: "Courier New, monospace" }}
+            >
+              {" "}
+              MLS Pal
+            </h1>
           </NavLink>
           |
           <NavLink to="/trade" className="hover:underline">
@@ -37,6 +43,7 @@ const NavBar = () => {
           <NavLink to="/aboutUs" className="hover:underline">
             About Us
           </NavLink>
+          |
         </div>
         {(currentPath === "/teams" || currentPath === "/players") && (
           <text className="text-xs"> Data updated 6/19/2025</text>

@@ -181,11 +181,11 @@ export const MLSNextProTable = () => {
             return (
               <tr
                 key={row.id}
-                className="border-b border-gray-200 hover:bg-gray-50 hover:cursor-pointer"
-                onClick={() => {
-                  console.log(row);
-                  navigate(`/players/${row.original.Name.trim()}`);
-                }}
+                className="border-b border-gray-200 hover:bg-gray-50"
+                // onClick={() => {
+                //   console.log(row);
+                //   navigate(`/players/${row.original.Name.trim()}`);
+                // }}
               >
                 {row.getVisibleCells().map((cell) => {
                   return (

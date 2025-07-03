@@ -8,7 +8,12 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { Team, teamsEastJson, teamsWestJson } from "../Teams";
+import {
+  mlsTeamColorClasses,
+  Team,
+  teamsEastJson,
+  teamsWestJson,
+} from "../Teams";
 
 const columnHelper = createColumnHelper<Team>();
 const columns = [
@@ -97,11 +102,6 @@ export const DataTable: React.FC<{ conference: "east" | "west" }> = ({
     },
   });
 
-  // table.setOptions((prev) => ({
-  //   ...prev,
-  //   onSortingChange: setSorting,
-  // }));
-
   const { rows } = table.getRowModel();
   return (
     <table className="w-full border">
@@ -121,7 +121,7 @@ export const DataTable: React.FC<{ conference: "east" | "west" }> = ({
                 <div
                   {...{
                     className: header.column.getCanSort()
-                      ? "cursor-pointer select-none"
+                      ? "cursor-pointer select-none "
                       : "",
                     onClick: header.column.getToggleSortingHandler(),
                   }}
@@ -144,7 +144,11 @@ export const DataTable: React.FC<{ conference: "east" | "west" }> = ({
         {rows.map((row) => (
           <tr
             key={row.id}
-            className="border-b border-grey-200  hover:bg-gray-100"
+            className={`border-b border-grey-200  hover:border-black hover:border-gray-500 ${
+              mlsTeamColorClasses[
+                row.original.Team as keyof typeof mlsTeamColorClasses
+              ]
+            } bg-opacity-50`}
           >
             {row.getVisibleCells().map((cell) => (
               <td key={cell.id} className="p-3">
