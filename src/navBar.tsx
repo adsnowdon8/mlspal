@@ -18,7 +18,7 @@ const NavBar = () => {
           </NavLink>
           |
           <NavLink to="/trade" className="hover:underline">
-            Trade Machine
+            Trades
           </NavLink>
           |
           <NavLink to="/rules" className="hover:underline">
@@ -40,10 +40,10 @@ const NavBar = () => {
             Young Performance Leaders MLS Next Pro
           </NavLink>
           |
-          <NavLink to="/aboutUs" className="hover:underline">
+          {/* <NavLink to="/aboutUs" className="hover:underline">
             About Us
           </NavLink>
-          |
+          | */}
         </div>
         {(currentPath === "/teams" || currentPath === "/players") && (
           <text className="text-xs"> Data updated 6/19/2025</text>
