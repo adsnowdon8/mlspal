@@ -2,7 +2,7 @@
 import requests
 
 # source 1: weather api
-APIKEY = "9054f01241fb959b36340b39ec9fe731"
+APIKEY = "REPLACE"
 city = "Carlsbad"
 units = "imperial"
 lat = "33.080699"
