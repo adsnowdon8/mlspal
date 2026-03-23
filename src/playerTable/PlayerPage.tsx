@@ -5,7 +5,6 @@ const fetchPlayerDetails = (playerId: string | undefined) => {
   if (!playerId) {
     return null;
   }
-  const [firstName, lastName] = playerId.split(" ");
   const pid = playerId.trim().replace(/\s+/g, "").toLowerCase();
   const player = playersJson.find((player) => {
     const pfid = player.Name.toLowerCase().replace(/\s+/g, "");
@@ -24,9 +23,6 @@ const fetchPlayerDetails = (playerId: string | undefined) => {
 
 export const PlayerPage = () => {
   const { playerId } = useParams();
-  //  make work for young players too?
-  // dont make work for young players
-  console.log("Player ID:", playerId);
 
   // Fetch player details using playerId if needed
   const playerDetails = fetchPlayerDetails(playerId);

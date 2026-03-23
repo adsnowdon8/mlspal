@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { MLSNextProTable } from "./MLSNextProTable";
 import { Heading } from "../glossary/Glossary";
 
@@ -16,12 +15,9 @@ export const PlayerProfile: React.FC<{ name: string; blurb: string }> = ({
   );
 };
 function YoungPerfLeaders() {
-  const tableContainerRef = useRef<HTMLDivElement>(null);
-
   return (
     <div
       className="text-center w-full h-full border min-w-0"
-      ref={tableContainerRef}
       style={{
         overflow: "auto",
         position: "relative",

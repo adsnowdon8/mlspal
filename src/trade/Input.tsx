@@ -21,9 +21,6 @@ export const InputView: React.FC<{
     useState<SingleValue<{ label: string; value: string }>>();
 
   const [loading, setLoading] = useState<boolean>();
-  const [questionsAsked, setQuestionsAsked] = useState<string[]>([]);
-  const [question, setQuestion] = useState("");
-  const [responses, setResponses] = useState<string[]>([]);
   const [response, setResponse] = useState<string>("");
   // someArrayOfStrings.map(opt => ({ label: opt, value: opt }));
 
@@ -36,7 +33,7 @@ export const InputView: React.FC<{
             label: player.Name,
             value: player.Name,
           };
-        }
+        },
         // <option value={player.First_Name + " " + player.Last_Name}>
         //   {player.First_Name + " " + player.Last_Name}
         // </option>
@@ -61,18 +58,17 @@ export const InputView: React.FC<{
       // ". what does the provided information tell us about this?";
       if (!constructedQuestion) return;
       setLoading(true);
-      setQuestionsAsked((q) => [...q, question]);
       const playerInfo = playersJson.find(
         (player) =>
           // player.First_Name + " " + player.Last_Name === selectedPlayer?.value
-          player.Name === selectedPlayer?.value
+          player.Name === selectedPlayer?.value,
       );
 
       const playerCurrentClubInfo = teamsJson.find((team) => {
         return team.Team === playerInfo?.Team;
       });
       const proposedTeamInfo = teamsJson.find(
-        (team) => team.Team === selectedTeam?.value
+        (team) => team.Team === selectedTeam?.value,
       );
       if (!playerInfo || !playerCurrentClubInfo || !proposedTeamInfo) {
         setLoading(false);
@@ -81,7 +77,6 @@ export const InputView: React.FC<{
       // JSON.stringify(teaminfo);
       // Give the answer as though you are a trade machine
       // Start your response with "MLS-pal thinks that and end your response with a disclaimer.
-      setQuestion("");
 
       axios({
         method: "post",
@@ -98,7 +93,6 @@ export const InputView: React.FC<{
         .then((response) => {
           setLoading(false);
           setResponse(response.data);
-          setResponses((r) => [...r, response.data]);
         })
         .catch((error) => {
           setLoading(false);
@@ -110,7 +104,7 @@ export const InputView: React.FC<{
           }
         });
     },
-    [selectedPlayer, question, selectedTeam]
+    [selectedPlayer, selectedTeam],
   );
   if (loading) {
     return (
@@ -147,7 +141,7 @@ export const InputView: React.FC<{
       ) : (
         <div className="h-full flex flex-col items-center justify-center gap-5 pb-40">
           <h1 className="text-2xl font-bold pt-10">Trade Analysis</h1>
-          <text className="w-1/2 ">
+          <p className="w-1/2 ">
             Major League Soccer operates under a distinctive set of roster
             rules, salary caps, and player movement mechanisms that make trades
             both complex and exciting.
@@ -160,7 +154,7 @@ export const InputView: React.FC<{
             <br />
             Whether you’re a fan, analyst, or front-office enthusiast, our tool
             brings clarity to the possibilities
-          </text>
+          </p>
 
           <div className=" flex items-center gap-1">
             <p> {"Select a Player: "}</p>

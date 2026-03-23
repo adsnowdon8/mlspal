@@ -1,13 +1,9 @@
-import { useRef } from "react";
 import { DataTable } from "./dataTable";
 
 function TeamTable() {
-  const tableContainerRef = useRef<HTMLDivElement>(null);
-
   return (
     <div
       className="text-center w-full h-full border min-w-0"
-      ref={tableContainerRef}
       style={{
         overflow: "auto",
         position: "relative",

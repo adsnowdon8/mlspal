@@ -46,12 +46,12 @@ const NavBar = () => {
           | */}
         </div>
         {(currentPath === "/teams" || currentPath === "/players") && (
-          <text className="text-xs"> Data updated 6/19/2025</text>
+          <span className="text-xs"> Data updated 6/19/2025</span>
         )}
         {/* how to diplay only on data pages */}
         <a
           href="mailto:hi@mlspal.app"
-          className="pr-5 className='hover:underline'"
+          className="pr-5 hover:underline"
         >
           Contact
         </a>

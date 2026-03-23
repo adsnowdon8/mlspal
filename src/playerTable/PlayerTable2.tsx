@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "../index.css";
 
@@ -18,11 +18,12 @@ import {
 import { Player, playersJson } from "./Players";
 import { abbrevsToPosition, positionAbrevs } from "../constants";
 import { teamsJson } from "../Teams";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { TeamLogoViewer } from "./TeamLogoViewer";
 
 declare module "@tanstack/react-table" {
   //allows us to define custom properties for our columns
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   interface ColumnMeta<TData extends RowData, TValue> {
     filterVariant?:
       | "text"
@@ -145,7 +146,7 @@ export const PlayerTable2 = () => {
     []
   );
 
-  const [data, setData] = useState<Player[]>(() => playersJson);
+  const data = playersJson;
   const table = useReactTable({
     data,
     columns,
@@ -165,7 +166,7 @@ export const PlayerTable2 = () => {
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(), //client side filtering
     getSortedRowModel: getSortedRowModel(),
-    debugTable: true,
+    debugTable: false,
   });
 
   return (
@@ -232,7 +233,6 @@ export const PlayerTable2 = () => {
                 key={row.id}
                 className="border-b border-gray-200 hover:bg-gray-50 hover:cursor-pointer"
                 onClick={() => {
-                  console.log(row);
                   navigate(`/players/${row.original.Name.trim()}`);
                 }}
               >
@@ -311,13 +311,8 @@ function Filter({ column }: { column: Column<any, unknown> }) {
     >
       <option value={""}> All Positions</option>
       {positionAbrevs.map((p) => (
-        <option value={abbrevsToPosition.get(p)}>{p}</option>
+        <option key={p} value={abbrevsToPosition.get(p)}>{p}</option>
       ))}
-      {/* See faceted column filters example for dynamic select options */}
-      {/* <option value="">All</option>
-      <option value="complicated">complicated</option>
-      <option value="relationship">relationship</option>
-      <option value="single">single</option> */}
     </select>
   ) : filterVariant === "club" ? (
     <select
@@ -329,15 +324,10 @@ function Filter({ column }: { column: Column<any, unknown> }) {
       {teamsJson
         .sort((a, b) => a.Team.localeCompare(b.Team))
         .map((team) => (
-          <option value={team.Team} className="">
+          <option key={team.Team} value={team.Team}>
             {team.Team}
           </option>
         ))}
-      {/* See faceted column filters example for dynamic select options */}
-      {/* <option value="">All</option>
-      <option value="complicated">complicated</option>
-      <option value="relationship">relationship</option>
-      <option value="single">single</option> */}
     </select>
   ) : filterVariant === "rosterDesignation" ? (
     <select
@@ -347,13 +337,8 @@ function Filter({ column }: { column: Column<any, unknown> }) {
     >
       <option value={""}> All</option>
       {positionAbrevs.map((p) => (
-        <option value={abbrevsToPosition.get(p)}>{p}</option>
+        <option key={p} value={abbrevsToPosition.get(p)}>{p}</option>
       ))}
-      {/* See faceted column filters example for dynamic select options */}
-      {/* <option value="">All</option>
-      <option value="complicated">complicated</option>
-      <option value="relationship">relationship</option>
-      <option value="single">single</option> */}
     </select>
   ) : (
     <DebouncedInput
@@ -391,7 +376,7 @@ function DebouncedInput({
     }, debounce);
 
     return () => clearTimeout(timeout);
-  }, [value]);
+  }, [value, debounce, onChange]);
 
   return (
     <input

@@ -379,16 +379,6 @@ export const MLS_TRADE_RULES =
 // **Overall:**
 
 // Based solely on the financial and roster implications, the proposed trade of Luis Abram to Charlotte FC is feasible. However, other factors, such as player availability, transfer fees, and player preference, would also need to be considered before completing the trade.`;
-type positionTypes =
-  | "GK"
-  | "LB"
-  | "CB"
-  | "RB"
-  | "CDM"
-  | "CAM"
-  | "LW"
-  | "ST"
-  | "RW";
 
 // export const positionAbrevs: string[] = [
 //   "GK",
