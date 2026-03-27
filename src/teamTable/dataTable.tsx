@@ -8,12 +8,8 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import {
-  mlsTeamColorClasses,
-  Team,
-  teamsEastJson,
-  teamsWestJson,
-} from "../Teams";
+import { Team, teamsEastJson, teamsWestJson } from "../Teams";
+import { TeamLogoViewer } from "../playerTable/TeamLogoViewer";
 
 const columnHelper = createColumnHelper<Team>();
 const columns = [
@@ -25,7 +21,12 @@ const columns = [
   }),
   columnHelper.accessor("Team", {
     header: () => "Team",
-    cell: (info) => info.getValue(),
+    cell: (info) => (
+      <>
+        {info.getValue()}
+        <TeamLogoViewer club={info.getValue()} />
+      </>
+    ),
     footer: (info) => info.column.id,
     sortingFn: "alphanumeric",
   }),
@@ -72,11 +73,11 @@ export const DataTable: React.FC<{ conference: "east" | "west" }> = ({
   conference,
 }) => {
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
-    []
+    [],
   );
   const data = conference === "east" ? teamsEastJson : teamsWestJson;
   const flatData = useMemo(() => {
-    //sort data based on s orting state
+    //sort data based on sorting state
     return data?.flatMap((page) => page) ?? [];
   }, [data]);
 
@@ -115,7 +116,7 @@ export const DataTable: React.FC<{ conference: "east" | "west" }> = ({
         className="bg-gray-100"
       >
         {table.getHeaderGroups().map((headerGroup) => (
-          <tr key={headerGroup.id} className="w-full border-b border-gray-100">
+          <tr key={headerGroup.id} className="w-full border-b border-gray">
             {headerGroup.headers.map((header) => (
               <th key={header.id}>
                 <div
@@ -128,7 +129,7 @@ export const DataTable: React.FC<{ conference: "east" | "west" }> = ({
                 >
                   {flexRender(
                     header.column.columnDef.header,
-                    header.getContext()
+                    header.getContext(),
                   )}
                   {{
                     asc: " 🔼",
@@ -141,14 +142,10 @@ export const DataTable: React.FC<{ conference: "east" | "west" }> = ({
         ))}
       </thead>
       <tbody>
-        {rows.map((row) => (
+        {rows.map((row, index) => (
           <tr
             key={row.id}
-            className={`border-b border-grey-200  hover:border-black hover:border-gray-500 ${
-              mlsTeamColorClasses[
-                row.original.Team as keyof typeof mlsTeamColorClasses
-              ]
-            } bg-opacity-50`}
+            className={`border-b border-grey-200 hover:border-gray-500 bg-opacity-50 ${index <= 7 ? "bg-green-100" : index === 8 ? "bg-blue-100" : ""}`}
           >
             {row.getVisibleCells().map((cell) => (
               <td key={cell.id} className="p-3">

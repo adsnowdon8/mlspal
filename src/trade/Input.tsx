@@ -59,9 +59,7 @@ export const InputView: React.FC<{
       if (!constructedQuestion) return;
       setLoading(true);
       const playerInfo = playersJson.find(
-        (player) =>
-          // player.First_Name + " " + player.Last_Name === selectedPlayer?.value
-          player.Name === selectedPlayer?.value,
+        (player) => player.Name === selectedPlayer?.value,
       );
 
       const playerCurrentClubInfo = teamsJson.find((team) => {
@@ -74,9 +72,6 @@ export const InputView: React.FC<{
         setLoading(false);
         return;
       }
-      // JSON.stringify(teaminfo);
-      // Give the answer as though you are a trade machine
-      // Start your response with "MLS-pal thinks that and end your response with a disclaimer.
 
       axios({
         method: "post",
