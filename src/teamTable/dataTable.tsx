@@ -69,9 +69,11 @@ const columns = [
   }),
 ];
 
-export const DataTable: React.FC<{ conference: "east" | "west" }> = ({
-  conference,
-}) => {
+export const DataTable: React.FC<{
+  conference: "east" | "west";
+  /** Sticky header `top` offset (e.g. below a sticky section title). */
+  stickyHeaderTop?: string;
+}> = ({ conference, stickyHeaderTop = "0" }) => {
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     [],
   );
@@ -109,9 +111,8 @@ export const DataTable: React.FC<{ conference: "east" | "west" }> = ({
       <thead
         style={{
           position: "sticky",
-          top: "0",
-          zIndex: 1,
-          // background: "white",
+          top: stickyHeaderTop,
+          zIndex: 10,
         }}
         className="bg-gray-100"
       >

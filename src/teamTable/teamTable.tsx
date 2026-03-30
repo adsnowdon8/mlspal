@@ -11,12 +11,16 @@ function TeamTable() {
       }}
     >
       <div className="p-10">
-        <b className="text-xl"> Eastern Conference</b>
-        <DataTable conference="east" />
+        <div className="sticky top-0 z-20 border-b border-gray-300 bg-gray-100 pb-3 pt-1">
+          <b className="text-xl"> Eastern Conference</b>
+        </div>
+        <DataTable conference="east" stickyHeaderTop="2.75rem" />
       </div>
       <div className="p-10">
-        <b className="text-xl"> Western Conference</b>
-        <DataTable conference="west" />
+        <div className="sticky top-0 z-20 border-b border-gray-300 bg-gray-100 pb-3 pt-1">
+          <b className="text-xl"> Western Conference</b>
+        </div>
+        <DataTable conference="west" stickyHeaderTop="2.75rem" />
       </div>
     </div>
   );
