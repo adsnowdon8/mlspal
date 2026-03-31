@@ -1,4 +1,7 @@
 import json
+import os
+import psycopg2
+import requests
 from flask import Flask, request, jsonify
 import google.generativeai as genai
 from flask_cors import CORS
@@ -7,7 +10,7 @@ from consts import MLS_TRADE_RULES, document_prefix_promt
 
 
 # google api setup
-GOOGLE_API_KEY = 'AIzaSyDUeg6mscDj7k-V-GQtOPWvC05u7oObr9k'
+GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 genai.configure(api_key=GOOGLE_API_KEY)
 # model = genai.GenerativeModel('gemini-pro')
 # model= genai.GenerativeModel('models/gemini-1.5-pro-001')
@@ -109,6 +112,70 @@ def local_response():
             return jsonify(response)  # Wrap the response in a JSON object
         except (json.JSONDecodeError, KeyError) as e:
             return jsonify({"error": str(e)}), 400  # Return an error message in JSON format
+
+
+MLS_GOALS_URL = "https://sportapi.mlssoccer.com/api/stats/players/competition/MLS-COM-000001/season/MLS-SEA-0001KA/order/goals/desc?pageSize=30&page=1"
+
+def get_db():
+    return psycopg2.connect(os.environ.get("DATABASE_URL"))
+
+def init_db():
+    conn = get_db()
+    cur = conn.cursor()
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS player_stats (
+            player_id TEXT PRIMARY KEY,
+            first_name TEXT,
+            last_name TEXT,
+            team TEXT,
+            goals INTEGER,
+            assists INTEGER,
+            shots INTEGER,
+            games_started INTEGER,
+            fetched_at TIMESTAMP DEFAULT NOW()
+        )
+    """)
+    conn.commit()
+    cur.close()
+    conn.close()
+
+init_db()
+
+@app.route('/stats/goals', methods=['GET'])
+def get_goals_leaders():
+    response = requests.get(MLS_GOALS_URL)
+    players = response.json()
+
+    conn = get_db()
+    cur = conn.cursor()
+    for p in players:
+        cur.execute("""
+            INSERT INTO player_stats (player_id, first_name, last_name, team, goals, assists, shots, games_started, fetched_at)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, NOW())
+            ON CONFLICT (player_id) DO UPDATE SET
+                first_name = EXCLUDED.first_name,
+                last_name = EXCLUDED.last_name,
+                team = EXCLUDED.team,
+                goals = EXCLUDED.goals,
+                assists = EXCLUDED.assists,
+                shots = EXCLUDED.shots,
+                games_started = EXCLUDED.games_started,
+                fetched_at = NOW()
+        """, (
+            p.get("player_id"),
+            p.get("player_first_name"),
+            p.get("player_last_name"),
+            p.get("team_short_name"),
+            p.get("goals"),
+            p.get("assists"),
+            p.get("shots_at_goal_sum"),
+            p.get("game_started"),
+        ))
+    conn.commit()
+    cur.close()
+    conn.close()
+
+    return jsonify(players)
 
 
 # if __name__ == "__main__":
