@@ -3,7 +3,7 @@ import NavBar from "./navBar";
 import { InputView } from "./trade/Input";
 import { LandingPage } from "./landingPage/LandingPage";
 import TeamTable from "./teamTable/teamTable";
-import { PlayerTable2 } from "./playerTable/PlayerTable2";
+import { PlayerTable } from "./playerTable/PlayerTable";
 import { Analytics } from "@vercel/analytics/react";
 import { PlayerPage } from "./playerTable/PlayerPage";
 import { Glossary } from "./glossary/Glossary";
@@ -17,7 +17,7 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/players" element={<PlayerTable2 />} />
+        <Route path="/players" element={<PlayerTable />} />
         <Route path="/teams" element={<TeamTable />} />
         <Route path="/trade" element={<InputView />} />
         <Route path="/mlsNextPro" element={<YoungPerfLeaders />} />

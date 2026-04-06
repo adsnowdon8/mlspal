@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../index.css";
-
 import {
   Column,
   ColumnDef,
@@ -15,11 +13,17 @@ import {
 } from "@tanstack/react-table";
 
 // import { makeData, Person } from "./makeData";
-import { Player, playersJson } from "./Players";
-import { abbrevsToPosition, positionAbrevs } from "../constants";
+import { PlayerStat } from "./Players";
+import {
+  abbrevsToPosition,
+  LOCAL_PLAYERS_ENDPOINT,
+  positionAbrevs,
+  server_PLAYERS_ENDPOINT,
+} from "../constants";
 import { teamsJson } from "../Teams";
 import { useNavigate } from "react-router-dom";
 import { TeamLogoViewer } from "./TeamLogoViewer";
+import axios from "axios";
 
 declare module "@tanstack/react-table" {
   //allows us to define custom properties for our columns
@@ -35,118 +39,90 @@ declare module "@tanstack/react-table" {
   }
 }
 
-export const PlayerTable2 = () => {
+export const PlayerTable = () => {
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
-    []
+    [],
   );
   const navigate = useNavigate();
 
-  const columns = React.useMemo<ColumnDef<Player, any>[]>(
+  const columns = React.useMemo<ColumnDef<PlayerStat, any>[]>(
     () => [
       {
-        accessorKey: "Shirt_Number",
+        accessorKey: "shirt_number",
         header: "Shirt Number",
-        cell: (info) => info.getValue(),
+        cell: (info) => info.getValue() ?? "-",
         enableColumnFilter: false,
       },
       {
-        accessorKey: "Name",
+        id: "name", // Unique ID for combined column
         header: "Name",
+        // Combine first and last name for display
+        accessorFn: (row) => `${row.first_name} ${row.last_name}`,
         cell: (info) => info.getValue(),
-        // enableColumnFilter: false ,
       },
-      // {
-      //   accessorKey: "First_Name",
-      //   header: "First Name",
-      //   cell: (info) => info.getValue(),
-      //   // enableColumnFilter: false ,
-      // },
-      // {
-      //   // accessorFn: (row) => row.lastName,
-      //   accessorKey: "Last_Name",
-      //   id: "lastName",
-      //   cell: (info) => info.getValue(),
-      //   header: () => <span>Last Name</span>,
-      //   // enableColumnFilter: false,
-      // },
       {
-        accessorKey: "Position",
-        header: () => "Position",
+        accessorKey: "position",
+        header: "Position",
         meta: {
           filterVariant: "position",
         },
+        cell: (info) => info.getValue() ?? "N/A",
       },
       {
-        accessorKey: "Team",
+        accessorKey: "team",
         header: "Club",
         meta: {
           filterVariant: "club",
         },
-        // cell: (info) => info.getValue(),
         cell: (info) => <TeamLogoViewer club={info.getValue()} />,
       },
       {
-        accessorKey: "Age",
-        header: () => "Age",
+        accessorKey: "minutes",
+        header: "Min",
+        cell: (info) => info.getValue()?.toLocaleString() ?? "0",
         enableColumnFilter: false,
-      },
-      {
-        accessorKey: "Contract_End",
-        header: () => "Contract End",
-        enableColumnFilter: false,
-
-        // meta: {
-        //   filterVariant: "range",
-        // },
       },
       // {
-      //   accessorKey: "Option_Years",
-      //   header: () => "Option Years",
+      //   accessorKey: "Contract_End",
+      //   header: () => "Contract End",
       //   enableColumnFilter: false,
-
-      //   // meta: {
-      //   //   filterVariant: "range",
-      //   // },
       // },
-
-      {
-        accessorKey: "Roster_Designation",
-        header: "Roster Designation",
-        enableColumnFilter: false,
-        meta: {
-          filterVariant: "rosterDesignation",
-        },
-      },
-      {
-        accessorKey: "Nationality",
-        header: "Nationality",
-        enableColumnFilter: false,
-        // meta: {
-        //   filterVariant: "range",
-        // },
-      },
       // {
-      //   accessorKey: "Domestic_or_International",
-      //   header: "Domestic or International",
+      //   accessorKey: "Roster_Designation",
+      //   header: "Roster Designation",
       //   enableColumnFilter: false,
-
       //   meta: {
-      //     filterVariant: "range",
+      //     filterVariant: "rosterDesignation",
       //   },
       // },
       {
-        accessorKey: "Minutes_Played",
-        header: "Minutes Played",
+        accessorKey: "age",
+        header: "Age",
         enableColumnFilter: false,
-        // meta: {
-        //   filterVariant: "range",
-        // },
+      },
+      {
+        accessorKey: "nationality",
+        header: "Nationality",
+        enableColumnFilter: false,
       },
     ],
-    []
+    [],
   );
 
-  const data = playersJson;
+  const [data, setData] = React.useState<PlayerStat[]>([]);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    axios
+      .get(LOCAL_PLAYERS_ENDPOINT)
+      // .get(server_PLAYERS_ENDPOINT)
+      .then((r) => {
+        setData(r.data);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
+
   const table = useReactTable({
     data,
     columns,
@@ -168,6 +144,8 @@ export const PlayerTable2 = () => {
     getSortedRowModel: getSortedRowModel(),
     debugTable: false,
   });
+
+  if (loading) return <div>Loading players...</div>;
 
   return (
     <div
@@ -206,7 +184,7 @@ export const PlayerTable2 = () => {
                         >
                           {flexRender(
                             header.column.columnDef.header,
-                            header.getContext()
+                            header.getContext(),
                           )}
                           {{
                             asc: " 🔼",
@@ -233,7 +211,9 @@ export const PlayerTable2 = () => {
                 key={row.id}
                 className="border-b border-gray-200 hover:bg-gray-50 hover:cursor-pointer"
                 onClick={() => {
-                  navigate(`/players/${row.original.Name.trim()}`);
+                  navigate(
+                    `/players/${row.original.first_name.trim()} ${row.original.last_name.trim()}`,
+                  );
                 }}
               >
                 {row.getVisibleCells().map((cell) => {
@@ -241,7 +221,7 @@ export const PlayerTable2 = () => {
                     <td key={cell.id} className="p-1">
                       {flexRender(
                         cell.column.columnDef.cell,
-                        cell.getContext()
+                        cell.getContext(),
                       )}
                     </td>
                   );
@@ -311,7 +291,9 @@ function Filter({ column }: { column: Column<any, unknown> }) {
     >
       <option value={""}> All Positions</option>
       {positionAbrevs.map((p) => (
-        <option key={p} value={abbrevsToPosition.get(p)}>{p}</option>
+        <option key={p} value={abbrevsToPosition.get(p)}>
+          {p}
+        </option>
       ))}
     </select>
   ) : filterVariant === "club" ? (
@@ -337,7 +319,9 @@ function Filter({ column }: { column: Column<any, unknown> }) {
     >
       <option value={""}> All</option>
       {positionAbrevs.map((p) => (
-        <option key={p} value={abbrevsToPosition.get(p)}>{p}</option>
+        <option key={p} value={abbrevsToPosition.get(p)}>
+          {p}
+        </option>
       ))}
     </select>
   ) : (

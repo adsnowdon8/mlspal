@@ -423,3 +423,7 @@ export const abbrevsToPosition = new Map([
 
 export const ALL_TEAMS: string = "All Teams";
 export const ALL_POSITIONS: string = "All Positions";
+
+export const server_PLAYERS_ENDPOINT =
+  "https://adsnowdon8.pythonanywhere.com/players";
+export const LOCAL_PLAYERS_ENDPOINT = "http://127.0.0.1:5000/players";
