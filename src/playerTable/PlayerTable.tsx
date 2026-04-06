@@ -16,7 +16,6 @@ import {
 import { PlayerStat } from "./Players";
 import {
   abbrevsToPosition,
-  LOCAL_PLAYERS_ENDPOINT,
   positionAbrevs,
   server_PLAYERS_ENDPOINT,
 } from "../constants";
@@ -114,8 +113,8 @@ export const PlayerTable = () => {
 
   React.useEffect(() => {
     axios
-      .get(LOCAL_PLAYERS_ENDPOINT)
-      // .get(server_PLAYERS_ENDPOINT)
+      // .get(LOCAL_PLAYERS_ENDPOINT)
+      .get(server_PLAYERS_ENDPOINT)
       .then((r) => {
         setData(r.data);
         setLoading(false);
