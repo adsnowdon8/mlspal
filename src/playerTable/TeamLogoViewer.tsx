@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 
 const SHORT_NAME_MAP: Record<string, string> = {
+  // Short codes
   ATL: "Atlanta United",
   CHI: "Chicago Fire",
   CLT: "Charlotte FC",
@@ -31,6 +32,40 @@ const SHORT_NAME_MAP: Record<string, string> = {
   VAN: "Vancouver Whitecaps",
   COL: "Colorado Rapids",
   STL: "St Louis City SC",
+  // Full names from roster API
+  "Atlanta United FC": "Atlanta United",
+  "Chicago Fire FC": "Chicago Fire",
+  "Charlotte FC": "Charlotte FC",
+  "Columbus Crew": "Columbus Crew",
+  "D.C. United": "DC United",
+  "FC Cincinnati": "FC Cincinnati",
+  "Inter Miami CF": "Inter Miami",
+  "New England Revolution": "NE Revolution",
+  "Nashville SC": "Nashville SC",
+  "New York City Football Club": "NYCFC",
+  "Red Bull New York": "NY Red Bulls",
+  "Orlando City SC": "Orlando City",
+  "Philadelphia Union": "Philadelphia Union",
+  "Toronto FC": "Toronto FC",
+  "Austin FC": "Austin FC",
+  "CF Montréal": "CF Montreal",
+  "CF Montreal": "CF Montreal",
+  "FC Dallas": "FC Dallas",
+  "Houston Dynamo FC": "Houston Dynamo",
+  "Los Angeles Football Club": "LAFC",
+  "LA Galaxy": "LA Galaxy",
+  "Minnesota United FC": "Minnesota United",
+  "Portland Timbers": "Portland Timbers",
+  "Real Salt Lake": "Real Salt Lake",
+  "San Diego FC": "San Diego FC",
+  "Seattle Sounders FC": "Seattle Sounders",
+  "San Jose Earthquakes": "SJ Earthquakes",
+  "San Jose": "SJ Earthquakes",
+  "Sporting Kansas City": "Sporting KC",
+  "Vancouver Whitecaps FC": "Vancouver Whitecaps",
+  "Colorado Rapids": "Colorado Rapids",
+  "St. Louis City SC": "St Louis City SC",
+  "St. Louis": "St Louis City SC",
 };
 
 export const TeamLogoViewer: React.FC<{ club: string }> = ({ club }) => {

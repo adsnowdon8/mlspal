@@ -13,16 +13,11 @@ import {
 } from "@tanstack/react-table";
 
 // import { makeData, Person } from "./makeData";
-import { PlayerStat } from "./Players";
-import {
-  abbrevsToPosition,
-  positionAbrevs,
-  server_PLAYERS_ENDPOINT,
-} from "../constants";
+import { fetchPlayers, PlayerStat } from "./Players";
+import { abbrevsToPosition, positionAbrevs } from "../constants";
 import { teamsJson } from "../Teams";
 import { useNavigate } from "react-router-dom";
 import { TeamLogoViewer } from "./TeamLogoViewer";
-import axios from "axios";
 
 declare module "@tanstack/react-table" {
   //allows us to define custom properties for our columns
@@ -77,7 +72,7 @@ export const PlayerTable = () => {
       },
       {
         accessorKey: "minutes",
-        header: "Min",
+        header: "Minutes Played",
         cell: (info) => info.getValue()?.toLocaleString() ?? "0",
         enableColumnFilter: false,
       },
@@ -112,12 +107,11 @@ export const PlayerTable = () => {
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
-    axios
-      // .get(LOCAL_PLAYERS_ENDPOINT)
-      .get(server_PLAYERS_ENDPOINT)
-      .then((r) => {
-        setData(r.data);
+    fetchPlayers()
+      .then((players) => {
+        setData(players);
         setLoading(false);
+        console.log(players);
       })
       .catch(() => setLoading(false));
   }, []);
@@ -129,7 +123,7 @@ export const PlayerTable = () => {
     initialState: {
       sorting: [
         {
-          id: "Minutes_Played",
+          id: "minutes",
           desc: true, // sort by name in descending order by default
         },
       ],

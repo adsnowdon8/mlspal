@@ -80,7 +80,8 @@ def init_roster_db():
             shirt_number TEXT,
             position TEXT,
             birth_date DATE,
-            nationality TEXT
+            nationality TEXT,
+            team TEXT
         )
     """)
     conn.commit()
@@ -99,6 +100,7 @@ def migrate_db():
     # Remove legacy age column from player_roster if it exists
     cur.execute("""
         ALTER TABLE player_roster
+        ADD COLUMN IF NOT EXISTS team_name TEXT,
         DROP COLUMN IF EXISTS age
     """)
     conn.commit()
@@ -191,19 +193,21 @@ def get_roster():
 
         for p in players:
             cur.execute("""
-                INSERT INTO player_roster (player_id, shirt_number, position, birth_date, nationality)
-                VALUES (%s, %s, %s, %s, %s)
+                INSERT INTO player_roster (player_id, shirt_number, position, birth_date, nationality, team_name)
+                VALUES (%s, %s, %s, %s, %s, %s)
                 ON CONFLICT (player_id) DO UPDATE SET
                     shirt_number = EXCLUDED.shirt_number,
                     position = EXCLUDED.position,
                     birth_date = EXCLUDED.birth_date,
-                    nationality = EXCLUDED.nationality
+                    nationality = EXCLUDED.nationality,
+                    team_name = EXCLUDED.team_name
             """, (
-                p.get("player_id"),       # verify field name from API response
-                p.get("shirt_number"),    # verify field name
+                p.get("player_id"),       
+                p.get("shirt_number"),    
                 p.get("playing_position_english"),      
                 p.get("birth_date"),      # e.g. "1995-03-22"
-                p.get("nationality_english"),     # verify field name
+                p.get("nationality_english"),     
+                p.get("club_name"),   
             ))
     conn.commit()
     cur.close()
