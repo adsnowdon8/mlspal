@@ -1,8 +1,6 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
-  const location = useLocation();
-  const currentPath = location.pathname;
   return (
     <nav>
       <div className="flex bg-gray-200 items-center justify-between">
