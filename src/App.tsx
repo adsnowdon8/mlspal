@@ -7,13 +7,13 @@ import { PlayerTable } from "./playerTable/PlayerTable";
 import { Analytics } from "@vercel/analytics/react";
 import { PlayerPage } from "./playerTable/PlayerPage";
 import { Glossary } from "./glossary/Glossary";
-
 import YoungPerfLeaders from "./MLSNextPro/YoungPerfLeaders";
 import AboutUs from "./AboutUs/AboutUs";
+import { PasswordGate } from "./PasswordGate";
 
 const App = () => {
   return (
-    <>
+    <PasswordGate>
       <NavBar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
@@ -26,7 +26,7 @@ const App = () => {
         <Route path="players/:playerId" element={<PlayerPage />} />
       </Routes>
       <Analytics />
-    </>
+    </PasswordGate>
   );
 };
 

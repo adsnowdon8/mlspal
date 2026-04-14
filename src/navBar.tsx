@@ -31,9 +31,6 @@ const NavBar = () => {
             Standings
           </NavLink>
           |
-          {/* <NavLink to="/teams" className="hover:underline">
-            News
-          </NavLink> */}
           <NavLink to="/MLSNextPro" className="hover:underline">
             Young Performance Leaders MLS Next Pro
           </NavLink>
